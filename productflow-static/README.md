@@ -6,7 +6,7 @@ The goal of this version is to build the first static HTML structure for a produ
 
 ## Current version
 
-ProductFlow Static v0.2
+ProductFlow Static v0.3
 
 ## How to open
 
@@ -20,7 +20,9 @@ Or use VS Code Live Server:
 ## Pages
 
 - Landing page: `index.html`
-- Create project page: `create-project.html` planned for Day 3
+- Create project page: `create-project.html`
+
+## What I practiced
 
 ## What I practiced
 
@@ -33,6 +35,11 @@ Or use VS Code Live Server:
 - Landing page structure
 - Heading hierarchy
 - Basic accessibility structure
+- HTML forms
+- Labels and inputs
+- Fieldsets and legends
+- Native form validation
+- Button types
 
 ## Limitations
 
@@ -42,7 +49,9 @@ Or use VS Code Live Server:
 
 ## Next steps
 
-- Create `create-project.html`
-- Add form structure
+## Next steps
+
 - Add dashboard page
+- Add project cards
 - Add CSS styles
+- Add responsive layout

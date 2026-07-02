@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Project — ProductFlow</title>
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Main navigation">
+        <a href="./index.html" aria-label="ProductFlow home">ProductFlow</a>
+        <ul>
+          <li><a href="./index.html#features">Features</a></li>
+          <li><a href="./index.html#workflow">Workflow</a></li>
+          <li>
+            <a href="./create-project.html" aria-current="page"
+              >Create project</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="page-title">
+        <p>ProductFlow project setup</p>
+        <h1 id="page-title">Create a new product project</h1>
+        <p>
+          Add the first details about your project. Later this form will be
+          connected to JavaScript and application state.
+        </p>
+      </section>
+      <section aria-labelledby="form-title">
+        <h2 id="form-title">Project details</h2>
+
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Basic information</legend>
+
+            <div>
+              <label for="project-title">Project title</label>
+              <input
+                id="project-title"
+                name="projectTitle"
+                type="text"
+                minlength="3"
+                maxlength="80"
+                required
+              />
+              <p id="project-title-help">
+                Use a clear name, for example: User onboarding redesign.
+              </p>
+            </div>
+
+            <div>
+              <label for="project-description">Project description</label>
+              <textarea
+                id="project-description"
+                name="projectDescription"
+                rows="5"
+                maxlength="500"
+              >
+              </textarea>
+              <p id="project-description-help">
+                Briefly describe the goal, context, or expected outcome.
+              </p>
+            </div>
+
+            <div>
+              <label for="project-status">Project status</label>
+              <select id="project-status" name="projectStatus" required>
+                <option value="">Select status</option>
+                <option value="active">Active</option>
+                <option value="paused">Paused</option>
+                <option value="archived">Archived</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="start-date">Start date</label>
+              <input id="start-date" name="startDate" type="date" required />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Priority</legend>
+
+            <div>
+              <input
+                id="priority-low"
+                name="projectPriority"
+                type="radio"
+                value="low"
+              />
+              <label for="priority-low">Low</label>
+            </div>
+
+            <div>
+              <input
+                id="priority-medium"
+                name="projectPriority"
+                type="radio"
+                value="medium"
+                checked
+              />
+              <label for="priority-medium">Medium</label>
+            </div>
+
+            <div>
+              <input
+                id="priority-high"
+                name="projectPriority"
+                type="radio"
+                value="high"
+              />
+              <label for="priority-high">High</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Owner</legend>
+
+            <div>
+              <label for="owner-name">Owner name</label>
+              <input
+                id="owner-name"
+                name="ownerName"
+                type="text"
+                minlength="2"
+                maxlength="60"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="owner-email">Owner email</label>
+              <input id="owner-email" name="ownerEmail" type="email" required />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Visibility</legend>
+
+            <div>
+              <input
+                id="project-public"
+                name="isPublic"
+                type="checkbox"
+                value="true"
+              />
+              <label for="project-public"
+                >Make this project visible to the team</label
+              >
+            </div>
+          </fieldset>
+
+          <div>
+            <button type="submit">Create project</button>
+            <button type="reset">Reset form</button>
+            <a href="./index.html">Cancel</a>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>ProductFlow learning project.</p>
+
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./index.html#features">Features</a></li>
+          <li><a href="./index.html#workflow">Workflow</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
