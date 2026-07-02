@@ -28,7 +28,9 @@ Or use VS Code Live Server:
 - Navigation
 - Sections
 - Lists
-- Buttons and links
+- Links
+- Landing page structure
+- Heading hierarchy
 - Basic accessibility structure
 
 ## Limitations
@@ -39,7 +41,7 @@ Or use VS Code Live Server:
 
 ## Next steps
 
-- Add more pages
-- Improve semantic structure
+- Create `create-project.html`
+- Add form structure
+- Add dashboard page
 - Add CSS styles
-- Build a dashboard page

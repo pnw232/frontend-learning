@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ProductFlow</title>
+    <title>ProductFlow — Product Management Dashboard</title>
   </head>
   <body>
     <header>
       <nav aria-label="Main navigation">
-        <a href="./index.html">ProductFlow</a>
-
+        <a href="./index.html" aria-label="ProductFlow home">ProductFlow</a>
         <ul>
+          <li><a href="#problem">Problem</a></li>
+          <li><a href="#solution">Solution</a></li>
           <li><a href="#features">Features</a></li>
           <li><a href="#workflow">Workflow</a></li>
           <li><a href="#cta">Start</a></li>
@@ -19,39 +20,110 @@
     </header>
     <main>
       <section aria-labelledby="hero-title">
-        <h1 id="hero-title">ProductFlow</h1>
+        <p>Product management dashboard for focused teams</p>
+        <h1 id="hero-title">
+          Manage product projects, tasks, and hypotheses in one place.
+        </h1>
         <p>
-          A simple product management dashboard for teams that need to manage
-          projects, tasks, hypotheses, and product decisions in one place.
+          ProductFlow helps product teams organize projects, track tasks,
+          document hypotheses, and keep product decisions visible.
         </p>
-        <a href="#cta">Create your first project</a>
+        <a href="#cta">Start with ProductFlow</a>
+      </section>
+      <section id="problem" aria-labelledby="problem-title">
+        <h2 id="problem-title">The problem</h2>
+        <p>
+          Product teams often keep projects, tasks, hypotheses, and decisions in
+          different tools. As a result, context gets lost, priorities become
+          unclear, and progress is harder to track.
+        </p>
+        <ul>
+          <li>Project information is scattered across many places.</li>
+          <li>Important decisions are not documented clearly.</li>
+          <li>
+            Teams spend time searching for context instead of moving forward.
+          </li>
+        </ul>
+      </section>
+      <section id="solution" aria-labelledby="solution-title">
+        <h2 id="solution-title">The solution</h2>
+        <p>
+          ProductFlow gives teams a simple structure for managing product work:
+          projects, tasks, hypotheses, metrics, and decisions are connected in
+          one dashboard.
+        </p>
       </section>
       <section id="features" aria-labelledby="features-title">
         <h2 id="features-title">Core features</h2>
         <ul>
-          <li>Manage product projects</li>
-          <li>Create and track tasks</li>
-          <li>Work with hypotheses</li>
-          <li>Review product metrics</li>
+          <li>
+            <h3>Project management</h3>
+            <p>Create product projects and keep their status visible.</p>
+          </li>
+          <li>
+            <h3>Task tracking</h3>
+            <p>Break product work into tasks and track progress by status.</p>
+          </li>
+          <li>
+            <h3>Hypothesis documentation</h3>
+            <p>Write product hypotheses and connect them with project goals.</p>
+          </li>
+          <li>
+            <h3>Metrics overview</h3>
+            <p>Review key product metrics and understand what changed.</p>
+          </li>
         </ul>
       </section>
       <section id="workflow" aria-labelledby="workflow-title">
-        <h2 id="workflow-title">Basic workflow</h2>
+        <h2 id="workflow-title">How it works</h2>
         <ol>
-          <li>Create a project</li>
-          <li>Add tasks</li>
-          <li>Track progress</li>
-          <li>Review outcomes</li>
+          <li>
+            <h3>Create a project</h3>
+            <p>Start with a product initiative, feature, or experiment.</p>
+          </li>
+          <li>
+            <h3>Add tasks</h3>
+            <p>Split the project into clear steps that can be tracked.</p>
+          </li>
+          <li>
+            <h3>Document hypotheses</h3>
+            <p>Describe what you expect to happen and why it matters.</p>
+          </li>
+          <li>
+            <h3>Review progress</h3>
+            <p>
+              Use statuses and metrics to understand where the project stands.
+            </p>
+          </li>
         </ol>
       </section>
+      <section aria-labelledby="benefits-title">
+        <h2 id="benefits-title">Why teams use ProductFlow</h2>
+        <ul>
+          <li>Clear structure for product work.</li>
+          <li>Less context switching between tools.</li>
+          <li>Better visibility for project progress.</li>
+          <li>Simple way to connect tasks, hypotheses, and metrics.</li>
+        </ul>
+      </section>
       <section id="cta" aria-labelledby="cta-title">
-        <h2 id="cta-title">Start with ProductFlow</h2>
-        <p>Create your first product project and organize your work.</p>
-        <button type="button">Create project</button>
+        <h2 id="cta-title">Start organizing your product work</h2>
+        <p>
+          Create your first project and build a clearer workflow for your
+          product team.
+        </p>
+        <a href="./create-project.html">Create your first project</a>
       </section>
     </main>
     <footer>
       <p>ProductFlow learning project.</p>
+      <nav aria-label="Footer navigation">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#workflow">Workflow</a></li>
+        </ul>
+      </nav>
     </footer>
   </body>
 </html>
