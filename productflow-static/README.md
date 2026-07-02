@@ -6,7 +6,7 @@ The goal of this version is to build the first static HTML structure for a produ
 
 ## Current version
 
-ProductFlow Static v0.1
+ProductFlow Static v0.2
 
 ## How to open
 
@@ -20,6 +20,7 @@ Or use VS Code Live Server:
 ## Pages
 
 - Landing page: `index.html`
+- Create project page: `create-project.html` planned for Day 3
 
 ## What I practiced
 
