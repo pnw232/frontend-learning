@@ -6,7 +6,7 @@ The goal of this version is to build the first static HTML structure for a produ
 
 ## Current version
 
-ProductFlow Static v0.5
+ProductFlow Static v0.6
 
 ## Pages
 
@@ -52,6 +52,13 @@ Or use VS Code Live Server:
 - Project folder structure
 - README documentation
 - Git hygiene
+- Accessibility review
+- Skip links
+- Keyboard navigation testing
+- aria-current
+- aria-describedby
+- Form accessibility
+- Link text review
 
 ## Project structure
 
@@ -79,8 +86,8 @@ productflow-static/
 
 ## Next steps
 
-- Add CSS styles
-- Add responsive layout
-- Style dashboard cards
+- Add base CSS styles
+- Add typography and spacing
+- Style navigation
 - Style form states
-- Add JavaScript interactions later
+- Style dashboard cards

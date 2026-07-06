@@ -47,6 +47,7 @@
                 type="text"
                 minlength="3"
                 maxlength="80"
+                aria-describedby="project-title-help"
                 required
               />
               <p id="project-title-help">
@@ -61,8 +62,8 @@
                 name="projectDescription"
                 rows="5"
                 maxlength="500"
-              >
-              </textarea>
+                aria-describedby="project-description-help"
+              ></textarea>
               <p id="project-description-help">
                 Briefly describe the goal, context, or expected outcome.
               </p>
@@ -88,13 +89,13 @@
             <legend>Priority</legend>
 
             <div>
+              <label for="priority-low">Low</label>
               <input
                 id="priority-low"
                 name="projectPriority"
                 type="radio"
                 value="low"
               />
-              <label for="priority-low">Low</label>
             </div>
 
             <div>
@@ -109,13 +110,13 @@
             </div>
 
             <div>
+              <label for="priority-high">High</label>
               <input
                 id="priority-high"
                 name="projectPriority"
                 type="radio"
                 value="high"
               />
-              <label for="priority-high">High</label>
             </div>
           </fieldset>
 
@@ -144,15 +145,15 @@
             <legend>Visibility</legend>
 
             <div>
+              <label for="project-public"
+                >Make this project visible to the team</label
+              >
               <input
                 id="project-public"
                 name="isPublic"
                 type="checkbox"
                 value="true"
               />
-              <label for="project-public"
-                >Make this project visible to the team</label
-              >
             </div>
           </fieldset>
 

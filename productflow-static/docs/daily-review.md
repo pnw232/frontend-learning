@@ -58,11 +58,27 @@ Result:
 
 ## Day 5 — Project structure and README polishing
 
-Status: In progress
+Status: Done
 
-Result:
+Result: 92/100
 
 - Project folders prepared
 - .gitignore added
 - Root README updated
 - ProductFlow README updated
+
+## Day 6 — Accessibility and semantic review
+
+Status: Done  
+Score: waiting for review
+
+Result:
+
+- Skip links added
+- Main content anchors added
+- Heading order reviewed
+- Navigation states reviewed
+- Form labels reviewed
+- aria-describedby added for help text
+- Keyboard navigation tested
+- README updated
