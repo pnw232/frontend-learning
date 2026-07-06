@@ -70,7 +70,7 @@ Result: 92/100
 ## Day 6 — Accessibility and semantic review
 
 Status: Done  
-Score: waiting for review
+Score: 92/100
 
 Result:
 
