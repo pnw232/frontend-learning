@@ -58,14 +58,17 @@ Result:
 
 ## Day 5 — Project structure and README polishing
 
-Status: Done
+Status: Done  
+Score: 91/100
 
-Result: 92/100
+Result:
 
 - Project folders prepared
 - .gitignore added
 - Root README updated
 - ProductFlow README updated
+- Daily review document added
+- Navigation checked
 
 ## Day 6 — Accessibility and semantic review
 
@@ -82,3 +85,17 @@ Result:
 - aria-describedby added for help text
 - Keyboard navigation tested
 - README updated
+
+## Day 7 — Week 1 final review and baseline
+
+Status: Done  
+Score: waiting for review
+
+Result:
+
+- Week 1 HTML baseline reviewed
+- Remaining accessibility issues fixed
+- Empty links removed
+- README updated
+- HTML pages checked in browser
+- Baseline commit prepared

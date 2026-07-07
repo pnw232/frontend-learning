@@ -6,7 +6,7 @@ The goal of this version is to build the first static HTML structure for a produ
 
 ## Current version
 
-ProductFlow Static v0.6
+ProductFlow Static v1.0 HTML Baseline
 
 ## Pages
 
@@ -59,6 +59,11 @@ Or use VS Code Live Server:
 - aria-describedby
 - Form accessibility
 - Link text review
+- Week 1 final review
+- HTML baseline preparation
+- Empty link cleanup
+- Browser self-check
+- Documentation polishing
 
 ## Project structure
 
@@ -91,3 +96,15 @@ productflow-static/
 - Style navigation
 - Style form states
 - Style dashboard cards
+
+## Week 1 baseline
+
+This version completes the first HTML-only baseline of ProductFlow.
+
+Included pages:
+
+- Semantic landing page
+- Create project form
+- Dashboard skeleton
+
+The project is ready for the next stage: CSS, spacing, typography, layout, and responsive design.
