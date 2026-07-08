@@ -14,12 +14,11 @@ ProductFlow is a learning product management dashboard.
 
 Current stage:
 
-- ProductFlow Static v1.0 HTML Baseline
-- Semantic landing page
-- Create project form
-- Dashboard skeleton
-- Accessibility and semantic review completed
-- Ready for CSS stage
+- ProductFlow Static v1.1 CSS Foundation
+- HTML baseline completed
+- Base CSS connected
+- Typography, colors, spacing, cards and forms styled
+- Ready for Flexbox and layout work
 
 Project folder:
 
@@ -27,15 +26,16 @@ Project folder:
 
 ## Current progress
 
-| Day   | Topic                                  | Status |
-| ----- | -------------------------------------- | ------ |
-| Day 1 | Setup, Git, first HTML page            | Done   |
-| Day 2 | Semantic landing page                  | Done   |
-| Day 3 | Create project form                    | Done   |
-| Day 4 | Dashboard skeleton                     | Done   |
-| Day 5 | Project structure and README polishing | Done   |
-| Day 6 | Accessibility and semantic review      | Done   |
-| Day 7 | Week 1 final review and baseline       | Done   |
+| Day   | Topic                                       | Status |
+| ----- | ------------------------------------------- | ------ |
+| Day 1 | Setup, Git, first HTML page                 | Done   |
+| Day 2 | Semantic landing page                       | Done   |
+| Day 3 | Create project form                         | Done   |
+| Day 4 | Dashboard skeleton                          | Done   |
+| Day 5 | Project structure and README polishing      | Done   |
+| Day 6 | Accessibility and semantic review           | Done   |
+| Day 7 | Week 1 final review and baseline            | Done   |
+| Day 8 | CSS foundation: typography, colors, spacing | Done   |
 
 ## How to open ProductFlow Static
 

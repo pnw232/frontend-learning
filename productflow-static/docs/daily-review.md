@@ -89,7 +89,7 @@ Result:
 ## Day 7 — Week 1 final review and baseline
 
 Status: Done  
-Score: waiting for review
+Score: 96/100
 
 Result:
 
@@ -99,3 +99,20 @@ Result:
 - README updated
 - HTML pages checked in browser
 - Baseline commit prepared
+
+## Day 8 — CSS foundation
+
+Status: Done  
+Score: waiting for review
+
+Result:
+
+- CSS file created
+- CSS connected to all HTML pages
+- CSS variables added
+- Base typography added
+- Colors and spacing added
+- Cards styled
+- Forms styled
+- Focus states added
+- Responsive foundation added

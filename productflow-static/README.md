@@ -6,7 +6,7 @@ The goal of this version is to build the first static HTML structure for a produ
 
 ## Current version
 
-ProductFlow Static v1.0 HTML Baseline
+ProductFlow Static v1.1 CSS Foundation
 
 ## Pages
 
@@ -64,6 +64,15 @@ Or use VS Code Live Server:
 - Empty link cleanup
 - Browser self-check
 - Documentation polishing
+- CSS file connection
+- CSS custom properties
+- Base typography
+- Colors
+- Spacing
+- Basic form styling
+- Basic card styling
+- Focus states
+- Responsive foundation
 
 ## Project structure
 
@@ -74,6 +83,7 @@ productflow-static/
   dashboard.html
   README.md
   styles/
+    main.css
   assets/
     images/
     icons/
@@ -91,11 +101,11 @@ productflow-static/
 
 ## Next steps
 
-- Add base CSS styles
-- Add typography and spacing
-- Style navigation
-- Style form states
-- Style dashboard cards
+- Improve layout with Flexbox
+- Improve layout with CSS Grid
+- Add responsive dashboard layout
+- Add better form states
+- Add visual polish
 
 ## Week 1 baseline
 
