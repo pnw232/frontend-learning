@@ -120,7 +120,7 @@ Result:
 ## Day 9 — Box model and spacing system
 
 Status: Done  
-Score: waiting for review
+Score: 88/100
 
 Result:
 

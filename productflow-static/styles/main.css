@@ -2,7 +2,7 @@
    ProductFlow CSS Foundation
    Version: v1.2
    ============================== */
-   
+
 /* Design tokens */
 :root {
   --color-page: #f8fafc;
@@ -250,6 +250,7 @@ section[aria-labelledby="stats-title"] li {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
+  margin-top: 0;
 }
 
 section[aria-labelledby="stats-title"] strong {
