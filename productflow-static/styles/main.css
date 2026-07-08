@@ -1,8 +1,8 @@
 /* ==============================
    ProductFlow CSS Foundation
-   Version: v1.1
+   Version: v1.2
    ============================== */
-
+   
 /* Design tokens */
 :root {
   --color-page: #f8fafc;
@@ -417,6 +417,15 @@ article > *:last-child {
 
 #tasks article {
   max-width: 760px;
+}
+
+#tasks ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+#tasks li + li {
+  margin-top: var(--space-md);
 }
 
 /* Form rhythm */
