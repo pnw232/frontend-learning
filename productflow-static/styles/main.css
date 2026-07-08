@@ -271,6 +271,12 @@ button[type="reset"] {
 /* Form groups */
 form div {
   margin-bottom: var(--space-md);
+  display: block;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  display: inline;
 }
 
 /* Empty state */
