@@ -6,7 +6,7 @@ The goal of this version is to build the first static HTML structure for a produ
 
 ## Current version
 
-ProductFlow Static v1.1 CSS Foundation
+ProductFlow Static v1.2 Spacing System
 
 ## Pages
 
@@ -73,6 +73,15 @@ Or use VS Code Live Server:
 - Basic card styling
 - Focus states
 - Responsive foundation
+- CSS box model
+- Margin and padding
+- Spacing system
+- Visual rhythm
+- Container width
+- Reading width
+- Form layout improvement
+- Card rhythm
+- DevTools box model inspection
 
 ## Project structure
 
@@ -101,10 +110,10 @@ productflow-static/
 
 ## Next steps
 
-- Improve layout with Flexbox
-- Improve layout with CSS Grid
-- Add responsive dashboard layout
-- Add better form states
+- Add Flexbox layout
+- Improve header layout
+- Improve dashboard navigation layout
+- Create responsive page layouts
 - Add visual polish
 
 ## Week 1 baseline

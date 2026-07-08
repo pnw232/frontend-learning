@@ -103,7 +103,7 @@ Result:
 ## Day 8 — CSS foundation
 
 Status: Done  
-Score: waiting for review
+Score: 90/100
 
 Result:
 
@@ -116,3 +116,20 @@ Result:
 - Forms styled
 - Focus states added
 - Responsive foundation added
+
+## Day 9 — Box model and spacing system
+
+Status: Done  
+Score: waiting for review
+
+Result:
+
+- Box model reviewed
+- Spacing tokens expanded
+- Page containers improved
+- Section rhythm improved
+- List rhythm improved
+- Card rhythm improved
+- Form layout improved
+- Skip-link behavior improved
+- DevTools box model inspection completed

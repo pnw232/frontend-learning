@@ -33,6 +33,19 @@
   --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.08);
 }
 
+/* Day 9 spacing tokens */
+:root {
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+
+  --container-width: 1120px;
+  --content-width: 760px;
+  --form-width: 760px;
+
+  --section-gap: var(--space-3xl);
+  --card-gap: var(--space-md);
+}
+
 /* Base reset */
 * {
   box-sizing: border-box;
@@ -124,8 +137,59 @@ aside {
   margin: 0 auto;
 }
 
+main,
+aside {
+  width: min(100% - 32px, var(--container-width));
+  margin-inline: auto;
+}
+
+main {
+  padding-block: var(--space-2xl);
+}
+
+body > header,
+body > footer {
+  padding-inline: var(--space-lg);
+}
+
+body > header > nav,
+body > footer > nav,
+body > footer > p {
+  width: min(100% - 32px, var(--container-width));
+  margin-inline: auto;
+}
+
+/* Reading width */
+main > section > p,
+main > section > ul,
+main > section > ol {
+  max-width: var(--content-width);
+}
+
+main > section:first-child {
+  max-width: var(--content-width);
+}
+
 section {
   margin-bottom: var(--space-2xl);
+}
+
+/* Section rhythm */
+section {
+  margin-bottom: var(--section-gap);
+}
+
+section:last-child {
+  margin-bottom: 0;
+}
+
+section > h2 {
+  margin-bottom: var(--space-lg);
+}
+
+section > p:last-child,
+article > p:last-child {
+  margin-bottom: 0;
 }
 
 /* Navigation */
@@ -140,15 +204,22 @@ nav ul {
 
 /* Skip link */
 body > a[href="#main-content"] {
+  position: absolute;
+  top: var(--space-md);
+  left: var(--space-md);
+  z-index: 100;
   display: inline-block;
   padding: var(--space-sm) var(--space-md);
-  background: var(--color-text);
   color: var(--color-surface);
+  background: var(--color-text);
+  border-radius: var(--radius-sm);
+  transform: translateY(-200%);
 }
 
 body > a[href="#main-content"]:focus {
   outline: 3px solid var(--color-accent);
   outline-offset: 2px;
+  transform: translateY(0);
 }
 
 /* Cards */
@@ -305,4 +376,96 @@ input[type="checkbox"] + label {
   nav li {
     margin-bottom: var(--space-sm);
   }
+}
+
+/* List rhythm */
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: var(--space-md);
+}
+
+li + li {
+  margin-top: var(--space-xs);
+}
+
+article li + li,
+section li + li {
+  margin-top: var(--space-sm);
+}
+
+/* Card rhythm */
+article {
+  margin-bottom: var(--card-gap);
+}
+
+article h3 {
+  margin-bottom: var(--space-sm);
+}
+
+article p {
+  max-width: var(--content-width);
+}
+
+article > *:last-child {
+  margin-bottom: 0;
+}
+
+#projects article {
+  max-width: 760px;
+}
+
+#tasks article {
+  max-width: 760px;
+}
+
+/* Form rhythm */
+form {
+  max-width: var(--form-width);
+}
+
+fieldset {
+  margin-bottom: var(--space-xl);
+}
+
+fieldset > div {
+  margin-bottom: var(--space-lg);
+}
+
+fieldset > div:last-child {
+  margin-bottom: 0;
+}
+
+form div > label {
+  display: block;
+}
+
+input,
+select,
+textarea {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  margin-top: var(--space-xs);
+}
+
+textarea {
+  max-width: 560px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline;
+  width: auto;
+  margin-top: 0;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  display: inline;
+}
+
+form button,
+form a {
+  margin-right: var(--space-sm);
 }
