@@ -423,25 +423,22 @@ form a {
     font-size: 1.875rem;
   }
 
-  nav ul {
-    display: block;
-  }
-
-  nav li {
-    margin-bottom: var(--space-sm);
-  }
-
   body > header > nav {
-  align-items: flex-start;
-  flex-direction: column;
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   body > header nav ul,
   body > footer nav ul,
   aside nav ul,
   form > div:last-child {
+    display: flex;
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  nav li {
+    margin-bottom: 0;
   }
 
   form > div:last-child {
@@ -543,11 +540,6 @@ input[type="checkbox"] {
 input[type="radio"] + label,
 input[type="checkbox"] + label {
   display: inline;
-}
-
-form button,
-form a {
-  margin-right: var(--space-sm);
 }
 
 /* Footer layout */

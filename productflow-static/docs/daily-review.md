@@ -137,7 +137,7 @@ Result:
 ## Day 10 — Flexbox layout
 
 Status: Done  
-Score: waiting for review
+Score: 89/100
 
 Result:
 
