@@ -462,6 +462,12 @@ section li + li {
   margin-top: var(--space-sm);
 }
 
+/* Navigation rhythm reset */
+nav li,
+nav li + li {
+  margin-top: 0;
+}
+
 /* Card rhythm */
 article {
   margin-bottom: var(--card-gap);
