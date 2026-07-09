@@ -133,3 +133,20 @@ Result:
 - Form layout improved
 - Skip-link behavior improved
 - DevTools box model inspection completed
+
+## Day 10 — Flexbox layout
+
+Status: Done  
+Score: waiting for review
+
+Result:
+
+- Header layout improved with Flexbox
+- Navigation alignment improved
+- Footer navigation improved
+- Dashboard navigation improved
+- Form actions layout improved
+- Radio and checkbox controls aligned
+- Project card meta layout improved
+- Responsive flex direction added
+- DevTools Flexbox inspection completed

@@ -1,6 +1,6 @@
 /* ==============================
    ProductFlow CSS Foundation
-   Version: v1.2
+   Version: v1.3
    ============================== */
 
 /* Design tokens */
@@ -44,6 +44,13 @@
 
   --section-gap: var(--space-3xl);
   --card-gap: var(--space-md);
+}
+
+/* Day 10 flexbox tokens */
+:root {
+  --nav-gap: var(--space-md);
+  --cluster-gap: var(--space-sm);
+  --actions-gap: var(--space-sm);
 }
 
 /* Base reset */
@@ -202,6 +209,37 @@ nav ul {
   list-style: none;
 }
 
+/* Header layout */
+body > header > nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--nav-gap);
+}
+
+body > header > nav > a {
+  flex-shrink: 0;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+body > header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-sm) var(--nav-gap);
+  margin: 0;
+}
+
+/* Dashboard navigation */
+aside nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-sm) var(--nav-gap);
+  margin: 0;
+}
+
 /* Skip link */
 body > a[href="#main-content"] {
   position: absolute;
@@ -271,6 +309,7 @@ fieldset {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
 }
+
 
 legend {
   padding: 0 var(--space-xs);
@@ -351,6 +390,20 @@ input[type="checkbox"] + label {
   display: inline;
 }
 
+/* Form actions */
+form > div:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--actions-gap);
+  margin-top: var(--space-xl);
+}
+
+form button,
+form a {
+  margin-right: 0;
+}
+
 /* Empty state */
 #empty-state article {
   background: var(--color-surface-muted);
@@ -376,6 +429,23 @@ input[type="checkbox"] + label {
 
   nav li {
     margin-bottom: var(--space-sm);
+  }
+
+  body > header > nav {
+  align-items: flex-start;
+  flex-direction: column;
+  }
+
+  body > header nav ul,
+  body > footer nav ul,
+  aside nav ul,
+  form > div:last-child {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  form > div:last-child {
+    gap: var(--space-md);
   }
 }
 
@@ -478,4 +548,62 @@ input[type="checkbox"] + label {
 form button,
 form a {
   margin-right: var(--space-sm);
+}
+
+/* Footer layout */
+body > footer {
+  display: block;
+}
+
+body > footer > p {
+  margin-bottom: var(--space-md);
+}
+
+body > footer nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm) var(--nav-gap);
+  margin: 0;
+}
+
+/* Choice controls */
+fieldset div:has(input[type="radio"]),
+fieldset div:has(input[type="checkbox"]) {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+fieldset div:has(input[type="radio"]) label,
+fieldset div:has(input[type="checkbox"]) label {
+  margin-bottom: 0;
+}
+
+fieldset div:has(input[type="radio"]) input,
+fieldset div:has(input[type="checkbox"]) input {
+  margin: 0;
+}
+
+/* Dashboard card meta */
+#projects article ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm) var(--space-lg);
+  padding-left: 0;
+  list-style: none;
+}
+
+#projects article li,
+#projects article li + li {
+  margin-top: 0;
+}
+
+/* Action links */
+main > section:first-child a,
+#cta a,
+#empty-state a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
 }

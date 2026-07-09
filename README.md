@@ -14,11 +14,12 @@ ProductFlow is a learning product management dashboard.
 
 Current stage:
 
-- ProductFlow Static v1.2 Spacing System
+- ProductFlow Static v1.3 Flexbox Layout
 - HTML baseline completed
 - CSS foundation connected
-- Box model and spacing system improved
-- Ready for Flexbox layout
+- Spacing system improved
+- Flexbox layout added
+- Ready for CSS Grid
 
 Project folder:
 
@@ -26,17 +27,18 @@ Project folder:
 
 ## Current progress
 
-| Day   | Topic                                       | Status |
-| ----- | ------------------------------------------- | ------ |
-| Day 1 | Setup, Git, first HTML page                 | Done   |
-| Day 2 | Semantic landing page                       | Done   |
-| Day 3 | Create project form                         | Done   |
-| Day 4 | Dashboard skeleton                          | Done   |
-| Day 5 | Project structure and README polishing      | Done   |
-| Day 6 | Accessibility and semantic review           | Done   |
-| Day 7 | Week 1 final review and baseline            | Done   |
-| Day 8 | CSS foundation: typography, colors, spacing | Done   |
-| Day 9 | Box model, spacing system, visual rhythm    | Done   |
+| Day    | Topic                                                | Status |
+| ------ | ---------------------------------------------------- | ------ |
+| Day 1  | Setup, Git, first HTML page                          | Done   |
+| Day 2  | Semantic landing page                                | Done   |
+| Day 3  | Create project form                                  | Done   |
+| Day 4  | Dashboard skeleton                                   | Done   |
+| Day 5  | Project structure and README polishing               | Done   |
+| Day 6  | Accessibility and semantic review                    | Done   |
+| Day 7  | Week 1 final review and baseline                     | Done   |
+| Day 8  | CSS foundation: typography, colors, spacing          | Done   |
+| Day 9  | Box model, spacing system, visual rhythm             | Done   |
+| Day 10 | Flexbox layout: header, navigation, forms, dashboard | Done   |
 
 ## How to open ProductFlow Static
 
