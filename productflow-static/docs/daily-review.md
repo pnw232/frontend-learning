@@ -154,7 +154,7 @@ Result:
 ## Day 11 — CSS Grid layout
 
 Status: Done  
-Score: waiting for review
+Score: 84/100
 
 Result:
 
@@ -166,3 +166,4 @@ Result:
 - Tasks grid added
 - Responsive grid behavior added
 - DevTools Grid inspection completed
+- Mobile dashboard overflow fixed

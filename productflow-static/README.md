@@ -122,10 +122,10 @@ productflow-static/
 ## Limitations
 
 - The project is static.
-- Styles are not implemented yet.
 - JavaScript behavior is not implemented yet.
 - Project details pages are not implemented yet.
 - Form submission does not create a real project yet.
+- Visual design is still in progress.
 
 ## Next steps
 

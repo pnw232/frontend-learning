@@ -617,7 +617,7 @@ nav li + li {
 
 /* Dashboard grid layout */
 .dashboard-layout {
-  width: min(100% - 32px, var(--container-width));
+  width: min(calc(100% - 32px), var(--container-width));
   margin-inline: auto;
   display: grid;
   grid-template-columns: var(--dashboard-sidebar-width) minmax(0, 1fr);
@@ -699,4 +699,43 @@ nav li + li {
 
 #tasks article {
   height: 100%;
+}
+
+/* Mobile grid safety */
+@media (max-width: 480px) {
+  .dashboard-layout {
+    width: 100%;
+    padding-inline: var(--space-md);
+  }
+
+  section[aria-labelledby="stats-title"] ul,
+  #tasks ul,
+  #features ul,
+  #workflow ol,
+  #benefits ul {
+    grid-template-columns: 1fr;
+  }
+
+  #projects article ul {
+    display: block;
+  }
+
+  #projects article li,
+  #projects article li + li {
+    margin-top: var(--space-xs);
+  }
+
+  article,
+  fieldset {
+    min-width: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  p,
+  li,
+  a {
+    overflow-wrap: break-word;
+  }
 }
