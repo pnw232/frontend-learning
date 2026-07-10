@@ -19,181 +19,181 @@
         </ul>
       </nav>
     </header>
+    <div class="dashboard-layout">
+      <aside aria-labelledby="sidebar-title">
+        <h2 id="sidebar-title">ProductFlow navigation</h2>
 
-    <aside aria-labelledby="sidebar-title">
-      <h2 id="sidebar-title">ProductFlow navigation</h2>
+        <nav aria-label="Dashboard navigation">
+          <ul>
+            <li><a href="./dashboard.html" aria-current="page">Overview</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#tasks">Recent tasks</a></li>
+            <li><a href="#empty-state">Empty state</a></li>
+            <li><a href="./create-project.html">Create project</a></li>
+          </ul>
+        </nav>
+      </aside>
 
-      <nav aria-label="Dashboard navigation">
-        <ul>
-          <li><a href="./dashboard.html" aria-current="page">Overview</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#tasks">Recent tasks</a></li>
-          <li><a href="#empty-state">Empty state</a></li>
-          <li><a href="./create-project.html">Create project</a></li>
-        </ul>
-      </nav>
-    </aside>
+      <main id="main-content">
+        <section aria-labelledby="dashboard-title">
+          <p>ProductFlow dashboard</p>
 
-    <main id="main-content">
-      <section aria-labelledby="dashboard-title">
-        <p>ProductFlow dashboard</p>
-
-        <h1 id="dashboard-title">Product work overview</h1>
-
-        <p>
-          Track active projects, recent tasks, and the current state of product
-          work in one place.
-        </p>
-
-        <a href="./create-project.html">Create new project</a>
-      </section>
-
-      <section aria-labelledby="stats-title">
-        <h2 id="stats-title">Current status</h2>
-
-        <ul>
-          <li>
-            <strong>4</strong>
-            Active projects
-          </li>
-          <li>
-            <strong>12</strong>
-            Open tasks
-          </li>
-          <li>
-            <strong>3</strong>
-            Hypotheses in progress
-          </li>
-          <li>
-            <strong>2</strong>
-            Projects at risk
-          </li>
-        </ul>
-      </section>
-
-      <section id="projects" aria-labelledby="projects-title">
-        <h2 id="projects-title">Active projects</h2>
-
-        <article aria-labelledby="project-onboarding-title">
-          <h3 id="project-onboarding-title">User onboarding redesign</h3>
+          <h1 id="dashboard-title">Product work overview</h1>
 
           <p>
-            Improve the first user experience and reduce drop-off during the
-            first product setup.
+            Track active projects, recent tasks, and the current state of
+            product work in one place.
           </p>
+
+          <a href="./create-project.html">Create new project</a>
+        </section>
+
+        <section aria-labelledby="stats-title">
+          <h2 id="stats-title">Current status</h2>
 
           <ul>
-            <li>Status: Active</li>
-            <li>Priority: High</li>
-            <li>Owner: Product team</li>
-            <li>Open tasks: 5</li>
+            <li>
+              <strong>4</strong>
+              Active projects
+            </li>
+            <li>
+              <strong>12</strong>
+              Open tasks
+            </li>
+            <li>
+              <strong>3</strong>
+              Hypotheses in progress
+            </li>
+            <li>
+              <strong>2</strong>
+              Projects at risk
+            </li>
           </ul>
+        </section>
 
-          <a
-            href="./dashboard.html#projects"
-            aria-label="View project details for User onboarding redesign"
-            >View project details</a
-          >
-        </article>
+        <section id="projects" aria-labelledby="projects-title">
+          <h2 id="projects-title">Active projects</h2>
 
-        <article aria-labelledby="project-dashboard-title">
-          <h3 id="project-dashboard-title">Analytics dashboard update</h3>
+          <article aria-labelledby="project-onboarding-title">
+            <h3 id="project-onboarding-title">User onboarding redesign</h3>
 
-          <p>
-            Update the dashboard structure to make key product metrics easier to
-            scan and compare.
-          </p>
+            <p>
+              Improve the first user experience and reduce drop-off during the
+              first product setup.
+            </p>
+
+            <ul>
+              <li>Status: Active</li>
+              <li>Priority: High</li>
+              <li>Owner: Product team</li>
+              <li>Open tasks: 5</li>
+            </ul>
+
+            <a
+              href="./dashboard.html#projects"
+              aria-label="View project details for User onboarding redesign"
+              >View project details</a
+            >
+          </article>
+
+          <article aria-labelledby="project-dashboard-title">
+            <h3 id="project-dashboard-title">Analytics dashboard update</h3>
+
+            <p>
+              Update the dashboard structure to make key product metrics easier
+              to scan and compare.
+            </p>
+
+            <ul>
+              <li>Status: Active</li>
+              <li>Priority: Medium</li>
+              <li>Owner: Design team</li>
+              <li>Open tasks: 4</li>
+            </ul>
+
+            <a
+              href="./dashboard.html#projects"
+              aria-label="View project details for Analytics dashboard update"
+            >
+              View project details
+            </a>
+          </article>
+
+          <article aria-labelledby="project-hypotheses-title">
+            <h3 id="project-hypotheses-title">Hypothesis tracking system</h3>
+
+            <p>
+              Create a simple structure for documenting, reviewing, and
+              validating product hypotheses.
+            </p>
+
+            <ul>
+              <li>Status: Paused</li>
+              <li>Priority: Medium</li>
+              <li>Owner: Research team</li>
+              <li>Open tasks: 3</li>
+            </ul>
+
+            <a
+              href="./dashboard.html#projects"
+              aria-label="View project details for Hypothesis tracking system"
+            >
+              View project details
+            </a>
+          </article>
+        </section>
+
+        <section id="tasks" aria-labelledby="tasks-title">
+          <h2 id="tasks-title">Recent tasks</h2>
 
           <ul>
-            <li>Status: Active</li>
-            <li>Priority: Medium</li>
-            <li>Owner: Design team</li>
-            <li>Open tasks: 4</li>
+            <li>
+              <article aria-labelledby="task-interview-title">
+                <h3 id="task-interview-title">Prepare interview questions</h3>
+                <p>Project: User onboarding redesign</p>
+                <p>Status: In progress</p>
+              </article>
+            </li>
+
+            <li>
+              <article aria-labelledby="task-wireframes-title">
+                <h3 id="task-wireframes-title">Review dashboard wireframes</h3>
+                <p>Project: Analytics dashboard update</p>
+                <p>Status: To do</p>
+              </article>
+            </li>
+
+            <li>
+              <article aria-labelledby="task-hypothesis-title">
+                <h3 id="task-hypothesis-title">Document first hypothesis</h3>
+                <p>Project: Hypothesis tracking system</p>
+                <p>Status: Done</p>
+              </article>
+            </li>
           </ul>
+        </section>
 
-          <a
-            href="./dashboard.html#projects"
-            aria-label="View project details for Analytics dashboard update"
-          >
-            View project details
-          </a>
-        </article>
-
-        <article aria-labelledby="project-hypotheses-title">
-          <h3 id="project-hypotheses-title">Hypothesis tracking system</h3>
+        <section id="empty-state" aria-labelledby="empty-state-title">
+          <h2 id="empty-state-title">Empty state example</h2>
 
           <p>
-            Create a simple structure for documenting, reviewing, and validating
-            product hypotheses.
+            When there are no projects yet, the dashboard should explain what
+            the user can do next.
           </p>
 
-          <ul>
-            <li>Status: Paused</li>
-            <li>Priority: Medium</li>
-            <li>Owner: Research team</li>
-            <li>Open tasks: 3</li>
-          </ul>
+          <article aria-labelledby="empty-projects-title">
+            <h3 id="empty-projects-title">No projects yet</h3>
 
-          <a
-            href="./dashboard.html#projects"
-            aria-label="View project details for Hypothesis tracking system"
-          >
-            View project details
-          </a>
-        </article>
-      </section>
+            <p>
+              Create your first project to start organizing tasks, hypotheses,
+              and product decisions.
+            </p>
 
-      <section id="tasks" aria-labelledby="tasks-title">
-        <h2 id="tasks-title">Recent tasks</h2>
-
-        <ul>
-          <li>
-            <article aria-labelledby="task-interview-title">
-              <h3 id="task-interview-title">Prepare interview questions</h3>
-              <p>Project: User onboarding redesign</p>
-              <p>Status: In progress</p>
-            </article>
-          </li>
-
-          <li>
-            <article aria-labelledby="task-wireframes-title">
-              <h3 id="task-wireframes-title">Review dashboard wireframes</h3>
-              <p>Project: Analytics dashboard update</p>
-              <p>Status: To do</p>
-            </article>
-          </li>
-
-          <li>
-            <article aria-labelledby="task-hypothesis-title">
-              <h3 id="task-hypothesis-title">Document first hypothesis</h3>
-              <p>Project: Hypothesis tracking system</p>
-              <p>Status: Done</p>
-            </article>
-          </li>
-        </ul>
-      </section>
-
-      <section id="empty-state" aria-labelledby="empty-state-title">
-        <h2 id="empty-state-title">Empty state example</h2>
-
-        <p>
-          When there are no projects yet, the dashboard should explain what the
-          user can do next.
-        </p>
-
-        <article aria-labelledby="empty-projects-title">
-          <h3 id="empty-projects-title">No projects yet</h3>
-
-          <p>
-            Create your first project to start organizing tasks, hypotheses, and
-            product decisions.
-          </p>
-
-          <a href="./create-project.html">Create first project</a>
-        </article>
-      </section>
-    </main>
-
+            <a href="./create-project.html">Create first project</a>
+          </article>
+        </section>
+      </main>
+    </div>
     <footer>
       <p>ProductFlow learning project.</p>
 

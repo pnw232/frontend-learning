@@ -6,7 +6,7 @@ The goal of this version is to build the first static HTML structure for a produ
 
 ## Current version
 
-ProductFlow Static v1.3 Flexbox Layout
+ProductFlow Static v1.4 CSS Grid Layout
 
 ## Pages
 
@@ -91,6 +91,16 @@ Or use VS Code Live Server:
 - Project card meta layout
 - Responsive flex direction
 - DevTools Flexbox inspection
+- CSS Grid layout
+- Grid container and grid items
+- Dashboard two-column layout
+- Responsive grid layout
+- auto-fit and minmax
+- Stats grid
+- Landing card grids
+- Project cards grid
+- Tasks grid
+- DevTools Grid inspection
 
 ## Project structure
 
@@ -119,11 +129,11 @@ productflow-static/
 
 ## Next steps
 
-- Add CSS Grid layout
-- Improve dashboard page layout
-- Create responsive two-column structures
-- Add visual polish
 - Refactor CSS organization
+- Improve visual hierarchy
+- Add UI states
+- Improve mobile layout details
+- Add CSS polish
 
 ## Week 1 baseline
 

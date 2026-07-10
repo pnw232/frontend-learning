@@ -150,3 +150,19 @@ Result:
 - Project card meta layout improved
 - Responsive flex direction added
 - DevTools Flexbox inspection completed
+
+## Day 11 — CSS Grid layout
+
+Status: Done  
+Score: waiting for review
+
+Result:
+
+- Dashboard layout converted to CSS Grid
+- Sidebar and main content placed into grid columns
+- Stats grid improved
+- Landing card grids added
+- Project cards grid added
+- Tasks grid added
+- Responsive grid behavior added
+- DevTools Grid inspection completed
