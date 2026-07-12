@@ -167,3 +167,19 @@ Result:
 - Responsive grid behavior added
 - DevTools Grid inspection completed
 - Mobile dashboard overflow fixed
+
+## Day 12 — CSS organization and responsive polish
+
+Status: Done  
+Score: waiting for review
+
+Result:
+
+- CSS variables merged into one token section
+- CSS file reorganized into logical sections
+- Duplicate rules removed
+- Global list rhythm cleaned up
+- Dashboard mobile overflow checked
+- Responsive behavior polished
+- Cascade and specificity reviewed in DevTools
+- README updated

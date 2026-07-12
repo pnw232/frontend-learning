@@ -6,7 +6,7 @@ The goal of this version is to build the first static HTML structure for a produ
 
 ## Current version
 
-ProductFlow Static v1.4 CSS Grid Layout
+ProductFlow Static v1.5 CSS Cleanup
 
 ## Pages
 
@@ -101,6 +101,15 @@ Or use VS Code Live Server:
 - Project cards grid
 - Tasks grid
 - DevTools Grid inspection
+- CSS organization
+- CSS cleanup
+- Cascade review
+- Specificity review
+- Responsive polish
+- Mobile overflow fixes
+- CSS section structure
+- Duplicate rule cleanup
+- DevTools cascade inspection
 
 ## Project structure
 
@@ -125,15 +134,14 @@ productflow-static/
 - JavaScript behavior is not implemented yet.
 - Project details pages are not implemented yet.
 - Form submission does not create a real project yet.
-- Visual design is still in progress.
 
 ## Next steps
 
-- Refactor CSS organization
 - Improve visual hierarchy
 - Add UI states
-- Improve mobile layout details
-- Add CSS polish
+- Improve buttons and links
+- Improve form states
+- Add design polish
 
 ## Week 1 baseline
 
