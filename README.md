@@ -14,12 +14,12 @@ ProductFlow is a learning product management dashboard.
 
 Current stage:
 
-- ProductFlow Static v1.5 CSS Cleanup
+- ProductFlow Static v1.6 UI States
 - HTML baseline completed
-- CSS foundation connected
-- Spacing, Flexbox and Grid added
-- CSS organization improved
-- Ready for visual hierarchy and UI states
+- CSS foundation, Flexbox and Grid completed
+- CSS structure cleaned up
+- Visual hierarchy and component states added
+- Ready for status badges, validation states and final polish
 
 Project folder:
 
@@ -41,6 +41,7 @@ Project folder:
 | Day 10 | Flexbox layout: header, navigation, forms, dashboard         | Done   |
 | Day 11 | CSS Grid: dashboard layout, card grids, responsive structure | Done   |
 | Day 12 | CSS organization, cleanup, responsive polish                 | Done   |
+| Day 13 | Visual hierarchy, buttons, links and UI states               | Done   |
 
 ## How to open ProductFlow Static
 

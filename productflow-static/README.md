@@ -6,7 +6,7 @@ The goal of this version is to build the first static HTML structure for a produ
 
 ## Current version
 
-ProductFlow Static v1.5 CSS Cleanup
+ProductFlow Static v1.6 UI States
 
 ## Pages
 
@@ -110,6 +110,17 @@ Or use VS Code Live Server:
 - CSS section structure
 - Duplicate rule cleanup
 - DevTools cascade inspection
+- Visual hierarchy
+- Primary and secondary actions
+- Button states
+- Link states
+- Navigation states
+- hover and active states
+- focus-visible
+- Disabled controls
+- Form control states
+- CSS transitions
+- DevTools pseudo-state inspection
 
 ## Project structure
 
@@ -137,11 +148,11 @@ productflow-static/
 
 ## Next steps
 
-- Improve visual hierarchy
-- Add UI states
-- Improve buttons and links
-- Improve form states
-- Add design polish
+- Improve visual design tokens
+- Add status badges
+- Add form validation states
+- Improve card hierarchy
+- Complete CSS stage review
 
 ## Week 1 baseline
 

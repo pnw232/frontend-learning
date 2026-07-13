@@ -171,7 +171,7 @@ Result:
 ## Day 12 — CSS organization and responsive polish
 
 Status: Done  
-Score: waiting for review
+Score: 95/100
 
 Result:
 
@@ -183,3 +183,20 @@ Result:
 - Responsive behavior polished
 - Cascade and specificity reviewed in DevTools
 - README updated
+
+## Day 13 — Visual hierarchy and UI states
+
+Status: Done  
+Score: waiting for review
+
+Result:
+
+- Primary and secondary action styles added
+- CTA links converted to action components
+- Navigation states improved
+- Hover and active states added
+- focus-visible states added
+- Disabled button state added
+- Form control states improved
+- Card hover states added
+- DevTools pseudo-state inspection completed
