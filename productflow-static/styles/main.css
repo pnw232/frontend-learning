@@ -1,6 +1,6 @@
 /* ==============================
    ProductFlow CSS Foundation
-   Version: v1.6
+   Version: v1.7
    ============================== */
 
 /* 1. Design tokens */
@@ -53,6 +53,26 @@
   --color-hover-surface: #f8fafc;
   --color-disabled-bg: #e2e8f0;
   --color-disabled-text: #94a3b8;
+
+  --color-success: #166534;
+  --color-success-bg: #dcfce7;
+  --color-success-border: #86efac;
+
+  --color-warning: #92400e;
+  --color-warning-bg: #fef3c7;
+  --color-warning-border: #fcd34d;
+
+  --color-info: #1e40af;
+  --color-info-bg: #dbeafe;
+  --color-info-border: #93c5fd;
+
+  --color-neutral: #475569;
+  --color-neutral-bg: #e2e8f0;
+  --color-neutral-border: #cbd5e1;
+
+  --color-error-bg: #fef2f2;
+  --color-error-border: #fca5a5;
+  
 
   --shadow-focus: 0 0 0 4px rgba(37, 99, 235, 0.2);
   --shadow-card-hover: 0 8px 24px rgba(15, 23, 42, 0.08);
@@ -405,6 +425,46 @@ article:hover {
   transform: none;
 }
 
+/* Status badges */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 24px;
+  padding: 2px var(--space-sm);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  border-radius: 999px;
+}
+
+.status-badge--active,
+.status-badge--done {
+  color: var(--color-success);
+  background: var(--color-success-bg);
+  border-color: var(--color-success-border);
+}
+
+.status-badge--paused {
+  color: var(--color-warning);
+  background: var(--color-warning-bg);
+  border-color: var(--color-warning-border);
+}
+
+.status-badge--progress {
+  color: var(--color-info);
+  background: var(--color-info-bg);
+  border-color: var(--color-info-border);
+}
+
+.status-badge--todo {
+  color: var(--color-neutral);
+  background: var(--color-neutral-bg);
+  border-color: var(--color-neutral-border);
+}
+
 /* Content list rhythm */
 ul,
 ol {
@@ -424,6 +484,16 @@ main section > ol li + li {
 /* 8. Forms */
 form {
   max-width: var(--form-width);
+}
+
+.form-note {
+  margin-bottom: var(--space-lg);
+  font-size: 0.875rem;
+}
+
+.form-note span,
+label span[aria-hidden="true"] {
+  color: var(--color-danger);
 }
 
 fieldset {
@@ -516,6 +586,35 @@ input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
   border-color: var(--color-accent);
+}
+
+/* Validation states */
+input:user-invalid,
+select:user-invalid,
+textarea:user-invalid {
+  background: var(--color-error-bg);
+  border-color: var(--color-danger);
+}
+
+input:user-invalid:focus-visible,
+select:user-invalid:focus-visible,
+textarea:user-invalid:focus-visible {
+  border-color: var(--color-danger);
+  box-shadow: 0 0 0 4px rgba(185, 28, 28, 0.15);
+}
+
+input[required]:user-valid,
+select[required]:user-valid {
+  border-color: var(--color-success-border);
+}
+
+@supports not selector(:user-invalid) {
+  input:invalid:focus,
+  select:invalid:focus,
+  textarea:invalid:focus {
+    background: var(--color-error-bg);
+    border-color: var(--color-danger);
+  }
 }
 
 button:disabled,

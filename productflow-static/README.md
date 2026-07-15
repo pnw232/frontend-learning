@@ -6,7 +6,7 @@ The goal of this version is to build the first static HTML structure for a produ
 
 ## Current version
 
-ProductFlow Static v1.6 UI States
+ProductFlow Static v1.7 CSS Stage Baseline
 
 ## Pages
 
@@ -121,6 +121,13 @@ Or use VS Code Live Server:
 - Form control states
 - CSS transitions
 - DevTools pseudo-state inspection
+- Status badges
+- Semantic status indicators
+- Form validation states
+- :user-valid and :user-invalid
+- Required field indicators
+- CSS stage regression testing
+- CSS stage final review
 
 ## Project structure
 
@@ -148,11 +155,11 @@ productflow-static/
 
 ## Next steps
 
-- Improve visual design tokens
-- Add status badges
-- Add form validation states
-- Improve card hierarchy
-- Complete CSS stage review
+- Start JavaScript fundamentals
+- Add form submission behavior
+- Add client-side validation messages
+- Render projects dynamically
+- Add dashboard interactions
 
 ## Week 1 baseline
 

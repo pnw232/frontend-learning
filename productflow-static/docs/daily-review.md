@@ -187,7 +187,7 @@ Result:
 ## Day 13 — Visual hierarchy and UI states
 
 Status: Done  
-Score: waiting for review
+Score: Score: 94/100
 
 Result:
 
@@ -200,3 +200,20 @@ Result:
 - Form control states improved
 - Card hover states added
 - DevTools pseudo-state inspection completed
+
+## Day 14 — Status badges, validation states and CSS stage review
+
+Status: Done  
+Score: waiting for review
+
+Result:
+
+- Project status badges added
+- Task status badges added
+- Required field indicators added
+- Form validation states added
+- Valid and invalid states tested
+- Responsive regression test completed
+- Accessibility regression test completed
+- CSS stage review document added
+- CSS stage baseline prepared

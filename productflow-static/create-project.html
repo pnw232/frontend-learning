@@ -36,12 +36,18 @@
       <section aria-labelledby="form-title">
         <h2 id="form-title">Project details</h2>
 
-        <form action="#" method="post">
+        <form action="./create-project.html" method="get">
+          <p class="form-note">
+            Fields marked with <span aria-hidden="true">*</span>
+            are required.
+          </p>
           <fieldset>
             <legend>Basic information</legend>
 
             <div>
-              <label for="project-title">Project title</label>
+              <label for="project-title">
+                Project title <span aria-hidden="true">*</span>
+              </label>
               <input
                 id="project-title"
                 name="projectTitle"
@@ -71,7 +77,9 @@
             </div>
 
             <div>
-              <label for="project-status">Project status</label>
+              <label for="project-status">
+                Project status <span aria-hidden="true">*</span>
+              </label>
               <select id="project-status" name="projectStatus" required>
                 <option value="">Select status</option>
                 <option value="active">Active</option>
@@ -81,7 +89,9 @@
             </div>
 
             <div>
-              <label for="start-date">Start date</label>
+              <label for="start-date">
+                Start date <span aria-hidden="true">*</span>
+              </label>
               <input id="start-date" name="startDate" type="date" required />
             </div>
           </fieldset>
@@ -125,7 +135,9 @@
             <legend>Owner</legend>
 
             <div>
-              <label for="owner-name">Owner name</label>
+              <label for="owner-name">
+                Owner name <span aria-hidden="true">*</span>
+              </label>
               <input
                 id="owner-name"
                 name="ownerName"
@@ -137,7 +149,9 @@
             </div>
 
             <div>
-              <label for="owner-email">Owner email</label>
+              <label for="owner-email">
+                Owner email <span aria-hidden="true">*</span>
+              </label>
               <input id="owner-email" name="ownerEmail" type="email" required />
             </div>
           </fieldset>
