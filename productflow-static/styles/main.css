@@ -131,8 +131,10 @@ a {
   color: var(--color-accent);
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
+  transition:
+    color var(--transition-fast),
+    text-decoration-color var(--transition-fast);
 }
-
 a:hover {
   color: var(--color-accent-hover);
   text-decoration-thickness: 2px;
@@ -143,7 +145,7 @@ a[aria-current="page"] {
   color: var(--color-text);
 }
 
-:focus {
+:focus:not(:focus-visible) {
   outline: none;
 }
 
@@ -155,12 +157,6 @@ textarea:focus-visible {
   outline: 3px solid var(--color-accent);
   outline-offset: 3px;
   box-shadow: var(--shadow-focus);
-}
-
-a {
-  transition:
-    color var(--transition-fast),
-    text-decoration-color var(--transition-fast);
 }
 
 article > a:not(.action-primary):hover {
@@ -485,15 +481,6 @@ textarea {
   max-width: 560px;
   min-height: 120px;
   resize: vertical;
-}
-
-button {
-  padding: var(--space-sm) var(--space-md);
-  color: var(--color-surface);
-  cursor: pointer;
-  background: var(--color-accent);
-  border: 0;
-  border-radius: var(--radius-sm);
 }
 
 /* Form actions */
