@@ -187,7 +187,7 @@ Result:
 ## Day 13 — Visual hierarchy and UI states
 
 Status: Done  
-Score: Score: 94/100
+Score: 94/100
 
 Result:
 
@@ -221,7 +221,7 @@ Result:
 ## Day 15 — JavaScript introduction
 
 Status: Done  
-Score: waiting for review
+Score: 96/100git add .
 
 Result:
 
