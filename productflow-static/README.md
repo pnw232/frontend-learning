@@ -6,7 +6,7 @@ The goal of this version is to build the first static HTML structure for a produ
 
 ## Current version
 
-ProductFlow Static v1.7 CSS Stage Baseline
+ProductFlow Static v1.8 JavaScript Foundation
 
 ## Pages
 
@@ -128,6 +128,15 @@ Or use VS Code Live Server:
 - Required field indicators
 - CSS stage regression testing
 - CSS stage final review
+- JavaScript file connection
+- Script defer attribute
+- Browser Console
+- console.log
+- Variables with const and let
+- Primitive data types
+- null and undefined
+- typeof operator
+- Basic JavaScript debugging
 
 ## Project structure
 
@@ -143,6 +152,7 @@ productflow-static/
     images/
     icons/
   scripts/
+    main.js
   docs/
 ```
 
@@ -155,11 +165,11 @@ productflow-static/
 
 ## Next steps
 
-- Start JavaScript fundamentals
-- Add form submission behavior
-- Add client-side validation messages
-- Render projects dynamically
-- Add dashboard interactions
+- Learn JavaScript operators
+- Work with strings and numbers
+- Add conditional logic
+- Learn functions
+- Start DOM interaction
 
 ## Week 1 baseline
 

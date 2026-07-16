@@ -14,13 +14,11 @@ ProductFlow is a learning product management dashboard.
 
 Current stage:
 
-- ProductFlow Static v1.7 CSS Stage Baseline
-- Semantic HTML baseline completed
-- Responsive CSS layout completed
-- Flexbox and Grid completed
-- UI states and status badges completed
-- Form validation states completed
-- Ready for JavaScript fundamentals
+- ProductFlow Static v1.8 JavaScript Foundation
+- HTML and CSS baseline completed
+- JavaScript file connected
+- Console, variables and data types practiced
+- Ready for operators, strings and numbers
 
 Project folder:
 
@@ -44,6 +42,7 @@ Project folder:
 | Day 12 | CSS organization, cleanup, responsive polish                 | Done   |
 | Day 13 | Visual hierarchy, buttons, links and UI states               | Done   |
 | Day 14 | Status badges, validation states and CSS stage review        | Done   |
+| Day 15 | JavaScript introduction: console, variables and data types   | Done   |
 
 ## How to open ProductFlow Static
 

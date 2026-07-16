@@ -204,7 +204,7 @@ Result:
 ## Day 14 — Status badges, validation states and CSS stage review
 
 Status: Done  
-Score: waiting for review
+Score: 97/100
 
 Result:
 
@@ -217,3 +217,20 @@ Result:
 - Accessibility regression test completed
 - CSS stage review document added
 - CSS stage baseline prepared
+
+## Day 15 — JavaScript introduction
+
+Status: Done  
+Score: waiting for review
+
+Result:
+
+- JavaScript file created
+- JavaScript connected to all HTML pages
+- defer attribute used
+- Browser Console tested
+- const and let practiced
+- Basic data types practiced
+- typeof operator practiced
+- Variable reassignment practiced
+- Console errors reviewed
