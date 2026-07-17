@@ -17,7 +17,7 @@ console.log(jsOn, typeof jsOn);
 const projectSelected = null;
 console.log(projectSelected, typeof projectSelected);
 
-// Day 16 — Operators, strings and numbers //
+// Day 16 — Operators, strings and numbers
 const activeProjects = 4;
 const averageTasks = 3;
 const totalTasks = activeProjects * averageTasks;
@@ -28,21 +28,21 @@ const tasksLeft = totalTasks - finishedTasks;
 console.log(`${tasksLeft} tasks remain.`);
 
 const finishedTasksPercent = (finishedTasks / totalTasks) * 100;
-console.log(`Progress: ${finishedTasksPercent.toFixed(2)}%`);
+console.log(`Progress: ${finishedTasksPercent}%`);
 
-const isActiveProject = true;
-console.log("Has active projects:", isActiveProject > 0, typeof isActiveProject);
-const hasAllTasksFinished = true;
-console.log("All tasks finished:", hasAllTasksFinished === totalTasks, typeof hasAllTasksFinished);
-const areRemainingTasks = true;
-console.log("Are remaining tasks greater than finished:", tasksLeft > finishedTasks, typeof areRemainingTasks);
+const isActiveProject = activeProjects > 0;
+console.log("Has active projects:", isActiveProject, typeof isActiveProject);
+const hasAllTasksFinished = finishedTasks === totalTasks;
+console.log("All tasks finished:", hasAllTasksFinished, typeof hasAllTasksFinished);
+const areRemainingTasks = tasksLeft > finishedTasks;
+console.log("Are remaining tasks greater than finished:", areRemainingTasks, typeof areRemainingTasks);
 
 
 const projectName = "User onboarding redesign";
 const projectStatus = "Active";
 const projectPriority = "High";
 const projectOwner = "Product team";
-const finalString = `${projectName} is ${projectStatus} project with ${projectPriority} priority, owned by ${projectOwner}.`;
+const finalString = `${projectName} is an ${projectStatus} project with ${projectPriority} priority, owned by ${projectOwner}.`;
 console.log(finalString);
 
 let openTasks = 12;
