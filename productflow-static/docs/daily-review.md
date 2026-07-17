@@ -221,7 +221,7 @@ Result:
 ## Day 15 — JavaScript introduction
 
 Status: Done  
-Score: 96/100git add .
+Score: 96/100
 
 Result:
 
@@ -234,3 +234,20 @@ Result:
 - typeof operator practiced
 - Variable reassignment practiced
 - Console errors reviewed
+
+## Day 16 — Operators, strings and numbers
+
+Status: Done  
+Score: waiting for review
+
+Result:
+
+- Arithmetic operators practiced
+- Assignment operators practiced
+- String concatenation reviewed
+- Template literals practiced
+- Number calculations completed
+- Comparison operators practiced
+- Strict equality practiced
+- String-to-number conversion practiced
+- Operator precedence reviewed

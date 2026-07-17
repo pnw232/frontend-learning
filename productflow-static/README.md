@@ -6,7 +6,7 @@ The goal of this version is to build the first static HTML structure for a produ
 
 ## Current version
 
-ProductFlow Static v1.8 JavaScript Foundation
+ProductFlow Static v1.9 JavaScript Operators
 
 ## Pages
 
@@ -137,6 +137,17 @@ Or use VS Code Live Server:
 - null and undefined
 - typeof operator
 - Basic JavaScript debugging
+- Arithmetic operators
+- Assignment operators
+- Increment and decrement
+- String concatenation
+- Template literals
+- String length
+- Comparison operators
+- Strict equality
+- Number conversion
+- String conversion
+- Operator precedence
 
 ## Project structure
 
@@ -165,11 +176,11 @@ productflow-static/
 
 ## Next steps
 
-- Learn JavaScript operators
-- Work with strings and numbers
-- Add conditional logic
-- Learn functions
-- Start DOM interaction
+- Learn conditional statements
+- Practice if, else if and else
+- Combine conditions
+- Learn truthy and falsy values
+- Start working with functions
 
 ## Week 1 baseline
 
