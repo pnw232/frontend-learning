@@ -73,11 +73,11 @@ if (openTasksCount > 15) {
 
 const openTasksCount2 = 5;
 const projectIsOverdue = true;
-const priotityLevel = "High";
+const priorityLevel = "High";
 
-if (projectIsOverdue && priotityLevel === "High") {
-  console.log("Critical risk")
-} else if (projectIsOverdue && openTasksCount2 > 10) {
+if (projectIsOverdue && priorityLevel === "High") {
+  console.log("Critical risk");
+} else if (projectIsOverdue || openTasksCount2 > 10) {
   console.log("At risk");
 } else {
   console.log("On track");
@@ -86,14 +86,13 @@ if (projectIsOverdue && priotityLevel === "High") {
 const isUserOwner = false;
 const isUserAdmin = true;
 const projectBlocked = false;
+const canEditProject = (isUserOwner || isUserAdmin) && !projectBlocked;
 
-if ((isUserOwner || isUserAdmin) && projectBlocked) {
-  const canEditProject = true;
-  console.log(canEditProject);
+if (canEditProject) {
+  console.log("Editing allowed");
 } else {
-  console.log("Editing allowed" || "Editing denied");
+  console.log("Editing denied");
 }
-
 
 const projectNameNew = "User onboarding redesign";
 
@@ -110,15 +109,15 @@ if (projectChosen) {
   console.log(`No project selected`);
 }
 
-const validForm = true;
-const noSavedChanges = true;
-const formSend = false;
-const canSaveDraft = true;
+const isFormValid = true;
+const hasUnsavedChanges = true;
+const isFormSubmitting = false;
+const canSaveDraft = isFormValid && hasUnsavedChanges && !isFormSubmitting;
 
-if (validForm && noSavedChanges && formSend) {
-  console.log(canSaveDraft);
+if (canSaveDraft) {
+  console.log("Save draft enabled");
 } else {
-  console.log("Save draft enabled" || "Save draft disabled");
+  console.log("Save draft disabled");
 }
 
 const status = "paused";
@@ -127,17 +126,21 @@ if (status === "active") {
   console.log("Project is active");
 } else if (status === "paused") {
   console.log("Project is paused");
-} else if (status === "Archived") {
+} else if (status === "archived") {
   console.log("Project is archived");
 } else {
   console.log("Unknown project status");
 }
 
-let completionPercent = 100;
+const completionPercent = 100;
+let statusText;
+
 if (completionPercent === 100) {
-  console.log("Completed");
+    statusText = "Completed";
 } else if (completionPercent >= 50 && completionPercent <= 99) {
-  console.log("In progress");
+    statusText = "In progress";
 } else {
-  console.log("Just started");
+    statusText = "Just started";
 }
+
+console.log(statusText);

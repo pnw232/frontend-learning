@@ -255,7 +255,7 @@ Result:
 ## Day 17 — Conditional statements
 
 Status: Done  
-Score: waiting for review
+Score: 96 / 100
 
 Result:
 
