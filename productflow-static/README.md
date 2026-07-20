@@ -6,7 +6,7 @@ The goal of this version is to build the first static HTML structure for a produ
 
 ## Current version
 
-ProductFlow Static v1.9 JavaScript Operators
+ProductFlow Static v2.0 JavaScript Conditions
 
 ## Pages
 
@@ -148,6 +148,16 @@ Or use VS Code Live Server:
 - Number conversion
 - String conversion
 - Operator precedence
+- Conditional statements
+- if, else if and else
+- Logical AND operator
+- Logical OR operator
+- Logical NOT operator
+- Combined conditions
+- Truthy and falsy values
+- Conditional fallbacks
+- Basic permission logic
+- Basic project status logic
 
 ## Project structure
 
@@ -176,11 +186,11 @@ productflow-static/
 
 ## Next steps
 
-- Learn conditional statements
-- Practice if, else if and else
-- Combine conditions
-- Learn truthy and falsy values
-- Start working with functions
+- Learn functions
+- Practice function parameters
+- Return values from functions
+- Move repeated logic into functions
+- Start reusable project calculations
 
 ## Week 1 baseline
 

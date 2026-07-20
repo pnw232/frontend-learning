@@ -251,3 +251,21 @@ Result:
 - Strict equality practiced
 - String-to-number conversion practiced
 - Operator precedence reviewed
+
+## Day 17 — Conditional statements
+
+Status: Done  
+Score: waiting for review
+
+Result:
+
+- if statements practiced
+- else if and else practiced
+- Logical AND practiced
+- Logical OR practiced
+- Logical NOT practiced
+- Combined conditions created
+- Truthy and falsy values practiced
+- Project risk logic created
+- Editing permission logic created
+- Status fallback logic created
