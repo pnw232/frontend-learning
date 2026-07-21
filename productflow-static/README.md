@@ -6,7 +6,7 @@ The goal of this version is to build the first static HTML structure for a produ
 
 ## Current version
 
-ProductFlow Static v2.0 JavaScript Conditions
+ProductFlow Static v2.1 JavaScript Functions
 
 ## Pages
 
@@ -158,6 +158,16 @@ Or use VS Code Live Server:
 - Conditional fallbacks
 - Basic permission logic
 - Basic project status logic
+- Function declarations
+- Function calls
+- Parameters and arguments
+- Return values
+- Local function scope
+- Reusable calculations
+- Functions with conditions
+- Boolean-returning functions
+- Function composition
+- Basic breakpoint debugging
 
 ## Project structure
 
@@ -186,11 +196,11 @@ productflow-static/
 
 ## Next steps
 
-- Learn functions
-- Practice function parameters
-- Return values from functions
-- Move repeated logic into functions
-- Start reusable project calculations
+- Learn arrays
+- Access array elements
+- Modify arrays
+- Practice array length
+- Process project collections
 
 ## Week 1 baseline
 

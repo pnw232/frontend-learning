@@ -14,11 +14,11 @@ ProductFlow is a learning product management dashboard.
 
 Current stage:
 
-- ProductFlow Static v2.0 JavaScript Conditions
+- ProductFlow Static v2.1 JavaScript Functions
 - HTML and CSS baseline completed
-- JavaScript variables, types and operators practiced
-- Conditional logic and logical operators practiced
-- Ready for functions
+- JavaScript variables, operators and conditions practiced
+- Functions and reusable calculations practiced
+- Ready for arrays
 
 Project folder:
 
@@ -45,6 +45,7 @@ Project folder:
 | Day 15 | JavaScript introduction: console, variables and data types   | Done   |
 | Day 16 | Operators, strings, numbers and template literals            | Done   |
 | Day 17 | Conditional statements, logical operators and truthy/falsy   | Done   |
+| Day 18 | Functions, parameters, arguments and return                  | Done   |
 
 ## How to open ProductFlow Static
 

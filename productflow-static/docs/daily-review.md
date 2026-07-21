@@ -269,3 +269,21 @@ Result:
 - Project risk logic created
 - Editing permission logic created
 - Status fallback logic created
+
+## Day 18 — Functions
+
+Status: Done  
+Score: waiting for review
+
+Result:
+
+- Function declarations practiced
+- Function calls practiced
+- Parameters and arguments practiced
+- Return values practiced
+- Local function scope reviewed
+- Reusable calculations created
+- Conditional functions created
+- Boolean-returning function created
+- Function composition practiced
+- Breakpoint debugging completed

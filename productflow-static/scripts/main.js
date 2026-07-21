@@ -144,3 +144,81 @@ if (completionPercent === 100) {
 }
 
 console.log(statusText);
+
+// Day 18 — Functions
+
+function getProjectName(projectName) {
+  return `Project: ${projectName}`;
+}
+console.log(getProjectName("User onboarding redesign"));
+
+
+function getAverageTasksPerProject(activeProjects, averageTasks) {
+  return (activeProjects * averageTasks);
+}
+console.log(getAverageTasksPerProject(4, 3));
+
+
+function getTasksLeft(totalTasks, finishedTasks) {
+  return totalTasks - finishedTasks;
+}
+console.log(getTasksLeft(12, 5));
+
+
+function getProgressPercentage(finishedTasks, totalTasks) {
+  return (finishedTasks / totalTasks) * 100;
+}
+console.log(getProgressPercentage(5, 12));
+
+
+function getWorkload(openTasksCount) {
+  if (openTasksCount > 15) {
+    return "High workload";
+  } else if (openTasksCount >= 8 && openTasksCount <= 15) {
+    return "Medium workload";
+  } else {
+    return "Low workload";
+  }
+}
+console.log(getWorkload(12));
+
+
+function getProjectRiskStatus(projectIsOverdue, openTasksCount2, priorityLevel) {
+  if (projectIsOverdue && priorityLevel === "High") {
+    return "Critical risk";
+  } else if (projectIsOverdue || openTasksCount2 > 10) {
+    return "At risk";
+  } else {
+    return "On track";
+  }
+}
+console.log(getProjectRiskStatus(true, 9, "High")); 
+
+function canUserEditProject(isUserOwner, isUserAdmin, projectBlocked) {
+  const canEditProject = (isUserOwner || isUserAdmin) && !projectBlocked;
+  return canEditProject;
+}
+if (canUserEditProject(false, true, false)) {
+  console.log("allowed");
+} else {
+  console.log("denied");
+}
+
+function getProjectStatus(status) {
+  switch (status) {
+    case "active":
+      return "Project is active";
+    case "paused":
+      return "Project is paused";
+    case "archived":
+      return "Project is archived";
+    default:
+      return "Unknown project status";
+  }
+}
+console.log(getProjectStatus("paused"));
+
+function getProjectsSummary(projectName, totalTasks, remainingTasks) {
+  return `Project: ${projectName}, Total tasks: ${totalTasks}, Remaining tasks: ${getTasksLeft(totalTasks, totalTasks - remainingTasks)}`;
+}
+console.log(getProjectsSummary("User onboarding redesign", 12, 7));
