@@ -273,7 +273,7 @@ Result:
 ## Day 18 — Functions
 
 Status: Done  
-Score: waiting for review
+Score: 97 / 100
 
 Result:
 

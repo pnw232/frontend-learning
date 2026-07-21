@@ -151,24 +151,30 @@ function getProjectName(projectName) {
   return `Project: ${projectName}`;
 }
 console.log(getProjectName("User onboarding redesign"));
+console.log(getProjectName("Analytics dashboard update"));
 
 
-function getAverageTasksPerProject(activeProjects, averageTasks) {
+function calculateTotalTasks(activeProjects, averageTasks) {
   return (activeProjects * averageTasks);
 }
-console.log(getAverageTasksPerProject(4, 3));
-
+console.log(calculateTotalTasks(4, 3));
+console.log(calculateTotalTasks(5, 6));
 
 function getTasksLeft(totalTasks, finishedTasks) {
   return totalTasks - finishedTasks;
 }
 console.log(getTasksLeft(12, 5));
+console.log(getTasksLeft(20, 20));
+console.log(getTasksLeft(10, 3));
 
 
 function getProgressPercentage(finishedTasks, totalTasks) {
   return (finishedTasks / totalTasks) * 100;
 }
 console.log(getProgressPercentage(5, 12));
+console.log(getProgressPercentage(10, 20));
+console.log(getProgressPercentage(3, 4));
+console.log(getProgressPercentage(0, 0));
 
 
 function getWorkload(openTasksCount) {
@@ -181,6 +187,8 @@ function getWorkload(openTasksCount) {
   }
 }
 console.log(getWorkload(12));
+console.log(getWorkload(20));
+console.log(getWorkload(4));
 
 
 function getProjectRiskStatus(projectIsOverdue, openTasksCount2, priorityLevel) {
@@ -193,16 +201,38 @@ function getProjectRiskStatus(projectIsOverdue, openTasksCount2, priorityLevel) 
   }
 }
 console.log(getProjectRiskStatus(true, 9, "High")); 
+console.log(getProjectRiskStatus(false, 12, "Low")); 
+console.log(getProjectRiskStatus(false, 3, "Medium")); 
 
 function canUserEditProject(isUserOwner, isUserAdmin, projectBlocked) {
   const canEditProject = (isUserOwner || isUserAdmin) && !projectBlocked;
   return canEditProject;
-}
-if (canUserEditProject(false, true, false)) {
+} 
+
+const firstEditCheck = canUserEditProject(false, true, false);
+
+if (firstEditCheck) {
   console.log("allowed");
 } else {
   console.log("denied");
 }
+
+const secondEditCheck = canUserEditProject(false, false, false);
+
+if (secondEditCheck) {
+  console.log("allowed");
+} else {
+  console.log("denied");
+}
+
+const thirdEditCheck = canUserEditProject(true, false, true);
+
+if (thirdEditCheck) {
+  console.log("allowed");
+} else {
+  console.log("denied");
+}
+
 
 function getProjectStatus(status) {
   switch (status) {
@@ -217,8 +247,14 @@ function getProjectStatus(status) {
   }
 }
 console.log(getProjectStatus("paused"));
+console.log(getProjectStatus("active"));
+console.log(getProjectStatus("archived"));
+console.log(getProjectStatus("unexpected"));
 
-function getProjectsSummary(projectName, totalTasks, remainingTasks) {
-  return `Project: ${projectName}, Total tasks: ${totalTasks}, Remaining tasks: ${getTasksLeft(totalTasks, totalTasks - remainingTasks)}`;
+
+function getProjectSummary(projectName, totalTasks, finishedTasks) {
+  const remainingTasks = getTasksLeft(totalTasks, finishedTasks);
+  return `${projectName}: ${finishedTasks} completed, ${remainingTasks} remaining.`;
 }
-console.log(getProjectsSummary("User onboarding redesign", 12, 7));
+
+console.log(getProjectSummary("User onboarding redesign", 12, 5));
