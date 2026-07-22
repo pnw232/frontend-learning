@@ -6,7 +6,7 @@ The goal of this version is to build the first static HTML structure for a produ
 
 ## Current version
 
-ProductFlow Static v2.1 JavaScript Functions
+ProductFlow Static v2.2 JavaScript Arrays
 
 ## Pages
 
@@ -168,6 +168,18 @@ Or use VS Code Live Server:
 - Boolean-returning functions
 - Function composition
 - Basic breakpoint debugging
+- Array creation
+- Array indexes
+- Array length
+- Accessing array elements
+- Updating array elements
+- push and pop
+- shift and unshift
+- First and last array elements
+- Arrays as function arguments
+- Empty array checks
+- Array mutation basics
+- Breakpoint array inspection
 
 ## Project structure
 
@@ -196,11 +208,11 @@ productflow-static/
 
 ## Next steps
 
-- Learn arrays
-- Access array elements
-- Modify arrays
-- Practice array length
-- Process project collections
+- Learn array iteration
+- Practice for loops
+- Process each project
+- Calculate totals from arrays
+- Build project lists dynamically
 
 ## Week 1 baseline
 

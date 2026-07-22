@@ -287,3 +287,21 @@ Result:
 - Boolean-returning function created
 - Function composition practiced
 - Breakpoint debugging completed
+
+## Day 19 — Arrays
+
+Status: Done  
+Score: waiting for review
+
+Result:
+
+- Arrays created
+- Array indexes practiced
+- Array length practiced
+- Array elements updated
+- push and unshift practiced
+- pop and shift practiced
+- First and last elements accessed
+- Arrays passed into functions
+- Empty array behavior reviewed
+- Breakpoint array inspection completed

@@ -17,6 +17,7 @@ console.log(jsOn, typeof jsOn);
 const projectSelected = null;
 console.log(projectSelected, typeof projectSelected);
 
+
 // Day 16 — Operators, strings and numbers
 const activeProjects = 4;
 const averageTasks = 3;
@@ -145,8 +146,8 @@ if (completionPercent === 100) {
 
 console.log(statusText);
 
-// Day 18 — Functions
 
+// Day 18 — Functions
 function getProjectName(projectName) {
   return `Project: ${projectName}`;
 }
@@ -258,3 +259,75 @@ function getProjectSummary(projectName, totalTasks, finishedTasks) {
 }
 
 console.log(getProjectSummary("User onboarding redesign", 12, 5));
+
+
+/// Day 19 — Arrays
+
+const projectsNames = ["User onboarding redesign","Analytics dashboard update","Hypothesis tracking system"];
+console.log(projectsNames.length);
+console.log(projectsNames, typeof projectsNames);
+console.log(projectsNames[0]);
+console.log(projectsNames[1]);
+console.log(projectsNames[2]);
+console.log(projectsNames[10]);
+
+const firstProject = projectsNames[0];
+const lastProject = projectsNames[projectsNames.length - 1];
+
+console.log(firstProject);
+console.log(lastProject);
+
+projectsNames[1] = "Analytics dashboard redesign";
+console.log(projectsNames);
+
+projectsNames.push("Mobile onboarding research");
+console.log(projectsNames);
+const newLenghtProjectsNames = projectsNames.push("Mobile onboarding research");
+console.log(newLenghtProjectsNames);
+projectsNames.unshift("ProductFlow foundation");
+const newLenghtProjectsNames2 = projectsNames.unshift("ProductFlow foundation");
+console.log(newLenghtProjectsNames2);
+console.log(projectsNames)
+
+const removedLastProject = projectsNames.pop();
+console.log(removedLastProject);
+console.log(projectsNames);
+
+const removedFirstProject = projectsNames.shift();
+console.log(removedFirstProject);
+console.log(projectsNames);
+
+const statuses = ["Active","Paused","Archived"]
+console.log(statuses[1]);
+statuses[1] = "In progress"
+statuses.push("Done");
+console.log(statuses);
+const removedLastStatus = statuses.pop();
+console.log(removedLastStatus);
+console.log(statuses);
+
+function getItemCount(statuses) {
+  return statuses.length;
+}
+console.log(getItemCount(statuses))
+
+function getFirstItem(statuses) {
+  return statuses[0];
+}
+console.log(getFirstItem(statuses))
+
+function getLastItem(statuses) {
+  const lastItem = statuses[statuses.length - 1]
+  return lastItem
+}
+console.log(getLastItem(statuses))
+
+const tasks = ["Prepare interview questions","Review dashboard wireframes","Document first hypothesis"]
+const newUrgentTaskFirst = tasks.unshift("Fix production issue");
+const newUrgenTaksLast = tasks.push("Update project notes");
+const currentTask = tasks.shift();
+const deferredTask = tasks.pop();
+console.log(currentTask);
+console.log(deferredTask);
+console.log(tasks);
+console.log(tasks.length);
