@@ -17,7 +17,6 @@ console.log(jsOn, typeof jsOn);
 const projectSelected = null;
 console.log(projectSelected, typeof projectSelected);
 
-
 // Day 16 — Operators, strings and numbers
 const activeProjects = 4;
 const averageTasks = 3;
@@ -34,10 +33,17 @@ console.log(`Progress: ${finishedTasksPercent}%`);
 const isActiveProject = activeProjects > 0;
 console.log("Has active projects:", isActiveProject, typeof isActiveProject);
 const hasAllTasksFinished = finishedTasks === totalTasks;
-console.log("All tasks finished:", hasAllTasksFinished, typeof hasAllTasksFinished);
+console.log(
+  "All tasks finished:",
+  hasAllTasksFinished,
+  typeof hasAllTasksFinished,
+);
 const areRemainingTasks = tasksLeft > finishedTasks;
-console.log("Are remaining tasks greater than finished:", areRemainingTasks, typeof areRemainingTasks);
-
+console.log(
+  "Are remaining tasks greater than finished:",
+  areRemainingTasks,
+  typeof areRemainingTasks,
+);
 
 const projectName = "User onboarding redesign";
 const projectStatus = "Active";
@@ -59,7 +65,6 @@ console.log(newTasks, typeof newTasks);
 const newTasksNumber = Number(newTasks);
 console.log(newTasksNumber, typeof newTasksNumber);
 console.log(`Open tasks after form data: ${openTasks + newTasksNumber}`);
-
 
 // Day 17 — Conditional statements
 const openTasksCount = 12;
@@ -137,15 +142,14 @@ const completionPercent = 100;
 let statusText;
 
 if (completionPercent === 100) {
-    statusText = "Completed";
+  statusText = "Completed";
 } else if (completionPercent >= 50 && completionPercent <= 99) {
-    statusText = "In progress";
+  statusText = "In progress";
 } else {
-    statusText = "Just started";
+  statusText = "Just started";
 }
 
 console.log(statusText);
-
 
 // Day 18 — Functions
 function getProjectName(projectName) {
@@ -154,9 +158,8 @@ function getProjectName(projectName) {
 console.log(getProjectName("User onboarding redesign"));
 console.log(getProjectName("Analytics dashboard update"));
 
-
 function calculateTotalTasks(activeProjects, averageTasks) {
-  return (activeProjects * averageTasks);
+  return activeProjects * averageTasks;
 }
 console.log(calculateTotalTasks(4, 3));
 console.log(calculateTotalTasks(5, 6));
@@ -168,7 +171,6 @@ console.log(getTasksLeft(12, 5));
 console.log(getTasksLeft(20, 20));
 console.log(getTasksLeft(10, 3));
 
-
 function getProgressPercentage(finishedTasks, totalTasks) {
   return (finishedTasks / totalTasks) * 100;
 }
@@ -176,7 +178,6 @@ console.log(getProgressPercentage(5, 12));
 console.log(getProgressPercentage(10, 20));
 console.log(getProgressPercentage(3, 4));
 console.log(getProgressPercentage(0, 0));
-
 
 function getWorkload(openTasksCount) {
   if (openTasksCount > 15) {
@@ -191,8 +192,11 @@ console.log(getWorkload(12));
 console.log(getWorkload(20));
 console.log(getWorkload(4));
 
-
-function getProjectRiskStatus(projectIsOverdue, openTasksCount2, priorityLevel) {
+function getProjectRiskStatus(
+  projectIsOverdue,
+  openTasksCount2,
+  priorityLevel,
+) {
   if (projectIsOverdue && priorityLevel === "High") {
     return "Critical risk";
   } else if (projectIsOverdue || openTasksCount2 > 10) {
@@ -201,14 +205,14 @@ function getProjectRiskStatus(projectIsOverdue, openTasksCount2, priorityLevel) 
     return "On track";
   }
 }
-console.log(getProjectRiskStatus(true, 9, "High")); 
-console.log(getProjectRiskStatus(false, 12, "Low")); 
-console.log(getProjectRiskStatus(false, 3, "Medium")); 
+console.log(getProjectRiskStatus(true, 9, "High"));
+console.log(getProjectRiskStatus(false, 12, "Low"));
+console.log(getProjectRiskStatus(false, 3, "Medium"));
 
 function canUserEditProject(isUserOwner, isUserAdmin, projectBlocked) {
   const canEditProject = (isUserOwner || isUserAdmin) && !projectBlocked;
   return canEditProject;
-} 
+}
 
 const firstEditCheck = canUserEditProject(false, true, false);
 
@@ -234,7 +238,6 @@ if (thirdEditCheck) {
   console.log("denied");
 }
 
-
 function getProjectStatus(status) {
   switch (status) {
     case "active":
@@ -252,7 +255,6 @@ console.log(getProjectStatus("active"));
 console.log(getProjectStatus("archived"));
 console.log(getProjectStatus("unexpected"));
 
-
 function getProjectSummary(projectName, totalTasks, finishedTasks) {
   const remainingTasks = getTasksLeft(totalTasks, finishedTasks);
   return `${projectName}: ${finishedTasks} completed, ${remainingTasks} remaining.`;
@@ -260,10 +262,13 @@ function getProjectSummary(projectName, totalTasks, finishedTasks) {
 
 console.log(getProjectSummary("User onboarding redesign", 12, 5));
 
+// Day 19 — Arrays
 
-/// Day 19 — Arrays
-
-const projectsNames = ["User onboarding redesign","Analytics dashboard update","Hypothesis tracking system"];
+const projectsNames = [
+  "User onboarding redesign",
+  "Analytics dashboard update",
+  "Hypothesis tracking system",
+];
 console.log(projectsNames.length);
 console.log(projectsNames, typeof projectsNames);
 console.log(projectsNames[0]);
@@ -280,14 +285,13 @@ console.log(lastProject);
 projectsNames[1] = "Analytics dashboard redesign";
 console.log(projectsNames);
 
-projectsNames.push("Mobile onboarding research");
+const newLengthProjectsNames = projectsNames.push("Mobile onboarding research");
+console.log(newLengthProjectsNames);
 console.log(projectsNames);
-const newLenghtProjectsNames = projectsNames.push("Mobile onboarding research");
-console.log(newLenghtProjectsNames);
-projectsNames.unshift("ProductFlow foundation");
-const newLenghtProjectsNames2 = projectsNames.unshift("ProductFlow foundation");
-console.log(newLenghtProjectsNames2);
-console.log(projectsNames)
+
+const newLengthProjectsNames2 = projectsNames.unshift("ProductFlow foundation");
+console.log(newLengthProjectsNames2);
+console.log(projectsNames);
 
 const removedLastProject = projectsNames.pop();
 console.log(removedLastProject);
@@ -297,32 +301,42 @@ const removedFirstProject = projectsNames.shift();
 console.log(removedFirstProject);
 console.log(projectsNames);
 
-const statuses = ["Active","Paused","Archived"]
+const statuses = ["Active", "Paused", "Archived"];
 console.log(statuses[1]);
-statuses[1] = "In progress"
+statuses[1] = "In progress";
 statuses.push("Done");
 console.log(statuses);
 const removedLastStatus = statuses.pop();
 console.log(removedLastStatus);
 console.log(statuses);
 
-function getItemCount(statuses) {
+function getItemCount(items) {
   return statuses.length;
 }
-console.log(getItemCount(statuses))
+console.log(getItemCount(statuses));
+console.log(getItemCount(projectsNames));
+console.log(getItemCount([]));
 
-function getFirstItem(statuses) {
+function getFirstItem(items) {
   return statuses[0];
 }
-console.log(getFirstItem(statuses))
+console.log(getFirstItem(statuses));
+console.log(getFirstItem(projectsNames));
+console.log(getFirstItem([]));
 
-function getLastItem(statuses) {
-  const lastItem = statuses[statuses.length - 1]
-  return lastItem
+function getLastItem(items) {
+  const lastItem = statuses[statuses.length - 1];
+  return lastItem;
 }
-console.log(getLastItem(statuses))
+console.log(getLastItem(statuses));
+console.log(getLastItem(projectsNames));
+console.log(getLastItem([]));
 
-const tasks = ["Prepare interview questions","Review dashboard wireframes","Document first hypothesis"]
+const tasks = [
+  "Prepare interview questions",
+  "Review dashboard wireframes",
+  "Document first hypothesis",
+];
 const newUrgentTaskFirst = tasks.unshift("Fix production issue");
 const newUrgenTaksLast = tasks.push("Update project notes");
 const currentTask = tasks.shift();

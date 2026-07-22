@@ -291,7 +291,7 @@ Result:
 ## Day 19 — Arrays
 
 Status: Done  
-Score: waiting for review
+Score: 97 / 100
 
 Result:
 
