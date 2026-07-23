@@ -309,7 +309,7 @@ Result:
 ## Day 20 — Loops and array iteration
 
 Status: Done  
-Score: waiting for review
+Score: 97 / 100
 
 Result:
 

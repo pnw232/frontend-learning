@@ -311,21 +311,21 @@ console.log(removedLastStatus);
 console.log(statuses);
 
 function getItemCount(items) {
-  return statuses.length;
+  return items.length;
 }
 console.log(getItemCount(statuses));
 console.log(getItemCount(projectsNames));
 console.log(getItemCount([]));
 
 function getFirstItem(items) {
-  return statuses[0];
+  return items[0];
 }
 console.log(getFirstItem(statuses));
 console.log(getFirstItem(projectsNames));
 console.log(getFirstItem([]));
 
 function getLastItem(items) {
-  const lastItem = statuses[statuses.length - 1];
+  const lastItem = items[items.length - 1];
   return lastItem;
 }
 console.log(getLastItem(statuses));
@@ -381,10 +381,10 @@ let highWorkloadProjectCount = 0;
 for (let index = 0; index < numbers.length; index += 1) {
   if (numbers[index] > 4) {
     highWorkloadProjectCount += 1;
+    console.log(`High workload project: ${newProjectNames[index]}`);
   }
 }
-
-console.log(highWorkloadProjectCount);
+console.log(`High workload projects: ${highWorkloadProjectCount}`);
 
 const statuses2 = ["Active", "Active", "Paused", "Active"];
 for (let index = 0; index < statuses2.length; index++) {
@@ -394,8 +394,8 @@ for (let index = 0; index < statuses2.length; index++) {
 }
 
 let activeCount = 0;
-for (const status of statuses2) {
-  if (status === "Active") {
+for (let index = 0; index < statuses2.length; index++) {
+  if (statuses2[index] === "Active") {
     activeCount++;
   }
 }
@@ -404,8 +404,8 @@ console.log(`Active projects: ${activeCount}`);
 function calculateSum(numbers) {
   let accumulator = 0;
 
-  for (const num of numbers) {
-    accumulator += num;
+  for (let index = 0; index < numbers.length; index++) {
+    accumulator += numbers[index];
   }
 
   return accumulator;
@@ -439,18 +439,17 @@ const projectsMassive = [
   "Hypothesis tracking system",
 ];
 
-function getBigString(projectMassive) {
+function getBuildList(projectsMassive) {
   let accumulator = "";
 
-  for (let index = 0; index < projectMassive.length; index++) {
-    let num = index + 1;
-    let element = projectMassive[index];
+  for (let index = 0; index < projectsMassive.length; index++) {
+    const num = index + 1;
+    const element = projectsMassive[index];
     accumulator += num + ". " + element + "\n";
   }
   return accumulator;
 }
-
-console.log(getBigString);
+console.log(getBuildList(projectsMassive));
 
 let firstPausedProject = null;
 for (let index = 0; index < statuses2.length; index++) {
