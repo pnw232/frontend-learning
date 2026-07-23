@@ -305,3 +305,22 @@ Result:
 - Arrays passed into functions
 - Empty array behavior reviewed
 - Breakpoint array inspection completed
+
+## Day 20 — Loops and array iteration
+
+Status: Done  
+Score: waiting for review
+
+Result:
+
+- for loops practiced
+- Arrays iterated by index
+- Parallel arrays processed
+- Numeric totals accumulated
+- Conditional counters created
+- Active projects counted
+- Reusable loop functions created
+- Numbered project list generated
+- break used for first-match search
+- Maximum value calculated manually
+- Loop breakpoint debugging completed

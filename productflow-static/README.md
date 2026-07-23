@@ -6,7 +6,7 @@ The goal of this version is to build the first static HTML structure for a produ
 
 ## Current version
 
-ProductFlow Static v2.2 JavaScript Arrays
+ProductFlow Static v2.3 JavaScript Loops
 
 ## Pages
 
@@ -180,6 +180,18 @@ Or use VS Code Live Server:
 - Empty array checks
 - Array mutation basics
 - Breakpoint array inspection
+- for loops
+- Loop counters
+- Array iteration
+- Current array elements
+- Numeric accumulators
+- Conditional counters
+- Iterating parallel arrays
+- break statement
+- Building strings in loops
+- Reusable loop functions
+- Manual maximum search
+- Loop breakpoint debugging
 
 ## Project structure
 
@@ -208,11 +220,11 @@ productflow-static/
 
 ## Next steps
 
-- Learn array iteration
-- Practice for loops
-- Process each project
-- Calculate totals from arrays
-- Build project lists dynamically
+- Learn objects
+- Store related project properties
+- Access and update object values
+- Create arrays of project objects
+- Prepare structured dashboard data
 
 ## Week 1 baseline
 

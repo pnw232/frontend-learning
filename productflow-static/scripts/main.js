@@ -345,3 +345,140 @@ console.log(currentTask);
 console.log(deferredTask);
 console.log(tasks);
 console.log(tasks.length);
+
+// Day 20 — Loops
+
+const newProjectNames = [
+  "User onboarding redesign",
+  "Analytics dashboard redesign",
+  "Hypothesis tracking system",
+  "Mobile onboarding research",
+];
+
+for (let index = 0; index < newProjectNames.length; index += 1) {
+  console.log(`Project ${index + 1}: ${newProjectNames[index]}`);
+}
+
+const numbers = [5, 4, 3, 6];
+console.log(newProjectNames.length === numbers.length);
+
+for (let index = 0; index < numbers.length; index += 1) {
+  console.log(`${newProjectNames[index]} has ${numbers[index]} open tasks`);
+}
+
+let totalSum = 0;
+for (let index = 0; index < numbers.length; index += 1) {
+  totalSum += numbers[index];
+}
+console.log(totalSum);
+
+const averageOpenTasks =
+  newProjectNames.length > 0 ? totalSum / newProjectNames.length : 0;
+
+console.log(`Average open tasks: ${averageOpenTasks}`);
+
+let highWorkloadProjectCount = 0;
+for (let index = 0; index < numbers.length; index += 1) {
+  if (numbers[index] > 4) {
+    highWorkloadProjectCount += 1;
+  }
+}
+
+console.log(highWorkloadProjectCount);
+
+const statuses2 = ["Active", "Active", "Paused", "Active"];
+for (let index = 0; index < statuses2.length; index++) {
+  console.log(
+    `${newProjectNames[index]} — ${statuses2[index]} — ${numbers[index]} tasks`,
+  );
+}
+
+let activeCount = 0;
+for (const status of statuses2) {
+  if (status === "Active") {
+    activeCount++;
+  }
+}
+console.log(`Active projects: ${activeCount}`);
+
+function calculateSum(numbers) {
+  let accumulator = 0;
+
+  for (const num of numbers) {
+    accumulator += num;
+  }
+
+  return accumulator;
+}
+console.log(calculateSum(numbers));
+
+// 2. Массив [1, 2, 3]
+console.log(calculateSum([1, 2, 3])); // Результат: 6
+
+// 3. Пустой массив []
+console.log(calculateSum([])); // Результат: 0
+
+function getStatus(statuses2, status) {
+  let counter = 0;
+
+  for (let index = 0; index < statuses2.length; index++) {
+    if (statuses2[index] === status) {
+      counter++;
+    }
+  }
+
+  return counter;
+}
+console.log(getStatus(statuses2, "Active")); // Выведет: 3
+console.log(getStatus(statuses2, "Paused")); // Выведет: 1
+console.log(getStatus(statuses2, "Archived")); // Выведет: 0
+
+const projectsMassive = [
+  "User onboarding redesign",
+  "Analytics dashboard redesign",
+  "Hypothesis tracking system",
+];
+
+function getBigString(projectMassive) {
+  let accumulator = "";
+
+  for (let index = 0; index < projectMassive.length; index++) {
+    let num = index + 1;
+    let element = projectMassive[index];
+    accumulator += num + ". " + element + "\n";
+  }
+  return accumulator;
+}
+
+console.log(getBigString);
+
+let firstPausedProject = null;
+for (let index = 0; index < statuses2.length; index++) {
+  const currentStatus = statuses2[index];
+  if (currentStatus === "Paused") {
+    firstPausedProject = newProjectNames[index];
+    break;
+  }
+}
+console.log(firstPausedProject);
+
+function findMaximum(arr) {
+  // Считать первый элемент текущим максимумом
+  let max = arr[0];
+
+  // Начать цикл со второго элемента
+  for (let i = 1; i < arr.length; i++) {
+    // Если текущий элемент больше максимума
+    if (arr[i] > max) {
+      // Обновить максимум
+      max = arr[i];
+    }
+  }
+
+  // После цикла вернуть максимум
+  return max;
+}
+
+console.log(findMaximum([5, 4, 3, 6]));
+console.log(findMaximum([10, 2, 8]));
+console.log(findMaximum([-5, -2, -10]));
