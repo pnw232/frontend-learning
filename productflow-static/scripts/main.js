@@ -490,10 +490,6 @@ const project1 = {
   openTasks: 5,
   owner: "Product team",
   isOverdue: false,
-  startDate: "2026-07-01",
-  teamVisibility: true,
-  completedTasks: 3,
-  temporaryValue: "string",
 };
 console.log(project1, typeof project1);
 console.log(project1.name);
@@ -517,34 +513,49 @@ console.log(project1.openTasks);
 project1.priority = "Medium";
 console.log(project1.priority);
 
+project1.startDate = "2026-07-01";
+project1.teamVisibility = true;
+project1.completedTasks = 3;
 console.log(project1.startDate);
 console.log(project1.teamVisibility);
 console.log(project1.completedTasks);
 console.log(project1);
 
-console.log("temporaryValue" in project1);
+project1.temporaryValue = "string";
+console.log(project1.temporaryValue);
+delete project1.temporaryValue;
+console.log(project1.temporaryValue);
+const isKeyExist = "temporaryValue" in project1;
+console.log("Ключ существует в объекте?:", isKeyExist);
 
-function getProjectSummaryObject(project1) {
-  return `${project1.name} - ${project1.status} - ${project1.priority} priority - ${project1.openTasks} open tasks`;
+function getProjectSummaryObject(project) {
+  return `${project.name} - ${project.status} - ${project.priority} priority - ${project.openTasks} open tasks`;
 }
 console.log(getProjectSummaryObject(project1));
 
-function getRemainingTasks(project1) {
-  const remainingTasks = project1.openTasks - project1.completedTasks;
+function getRemainingTasks(project) {
+  const remainingTasks = project.openTasks - project.completedTasks;
   return remainingTasks;
 }
 const totalRemaining = getRemainingTasks(project1);
 console.log(`Remaining tasks: ${totalRemaining}`);
 
-function getRiskInfo(project1) {
-  if (project1.isOverdue || project1.openTasks > 10) {
+function getRiskInfo(project) {
+  if (project.isOverdue || project.openTasks > 10) {
     return true;
   } else {
     return false;
   }
 }
 const onRisk = getRiskInfo(project1);
-console.log(getRiskInfo(project1));
+console.log(onRisk);
+
+function updateProjectStatus(project, newStatus) {
+  project.status = newStatus;
+}
+console.log(project1.status);
+updateProjectStatus(project1, "Active");
+console.log(project1.status);
 
 const project2 = {
   name: "Analytics dashboard redesign",
@@ -560,16 +571,14 @@ console.log(getProjectSummaryObject(project2));
 console.log(getRemainingTasks(project2));
 console.log(getRiskInfo(project2));
 
-function getKey(project2) {
-  Object.keys(project2);
-  return object[key];
+function getKey(project2, name) {
+  return project2[name];
 }
-
-console.log(project2[name]);
-console.log(project2[owner]);
-console.log(project2[openTasks]);
-console.log(project2[unknownProperty]);
+console.log(getKey(project2, "name"));
+console.log(getKey(project2, "owner"));
+console.log(getKey(project2, "openTasks"));
+console.log(getKey(project2, "unknownProperty"));
 
 const keys = Object.keys(project1);
-console.log(keys);
-console.log(keys.length);
+console.log("Массив ключей:", keys);
+console.log("Количество ключей:", keys.length);
