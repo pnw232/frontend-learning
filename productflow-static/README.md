@@ -6,7 +6,7 @@ The goal of this version is to build the first static HTML structure for a produ
 
 ## Current version
 
-ProductFlow Static v2.3 JavaScript Loops
+ProductFlow Static v2.4 JavaScript Objects
 
 ## Pages
 
@@ -192,6 +192,19 @@ Or use VS Code Live Server:
 - Reusable loop functions
 - Manual maximum search
 - Loop breakpoint debugging
+- Object literals
+- Object properties
+- Dot notation
+- Bracket notation
+- Dynamic property access
+- Updating object properties
+- Adding object properties
+- Deleting object properties
+- Objects as function arguments
+- Object mutation basics
+- Property existence checks
+- Object.keys
+- Object debugging in DevTools
 
 ## Project structure
 
@@ -220,11 +233,11 @@ productflow-static/
 
 ## Next steps
 
-- Learn objects
-- Store related project properties
-- Access and update object values
-- Create arrays of project objects
-- Prepare structured dashboard data
+- Create arrays of objects
+- Iterate project objects
+- Calculate metrics from structured data
+- Find and update project records
+- Prepare dashboard data models
 
 ## Week 1 baseline
 

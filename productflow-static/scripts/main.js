@@ -481,3 +481,95 @@ function findMaximum(arr) {
 console.log(findMaximum([5, 4, 3, 6]));
 console.log(findMaximum([10, 2, 8]));
 console.log(findMaximum([-5, -2, -10]));
+
+// Day 21 — Objects
+const project1 = {
+  name: "User onboarding redesign",
+  status: "Active",
+  priority: "High",
+  openTasks: 5,
+  owner: "Product team",
+  isOverdue: false,
+  startDate: "2026-07-01",
+  teamVisibility: true,
+  completedTasks: 3,
+  temporaryValue: "string",
+};
+console.log(project1, typeof project1);
+console.log(project1.name);
+console.log(project1.openTasks);
+console.log(project1.isOverdue);
+
+console.log(`Project name: ${project1.name}`);
+console.log(`Project status: ${project1.status}`);
+console.log(`Project priority: ${project1.priority}`);
+console.log(`Project owner: ${project1.owner}`);
+
+const requestedProperty = "priority";
+console.log(project1[requestedProperty]);
+
+project1.status = "Paused";
+console.log(project1.status);
+
+project1.openTasks = 7;
+console.log(project1.openTasks);
+
+project1.priority = "Medium";
+console.log(project1.priority);
+
+console.log(project1.startDate);
+console.log(project1.teamVisibility);
+console.log(project1.completedTasks);
+console.log(project1);
+
+console.log("temporaryValue" in project1);
+
+function getProjectSummaryObject(project1) {
+  return `${project1.name} - ${project1.status} - ${project1.priority} priority - ${project1.openTasks} open tasks`;
+}
+console.log(getProjectSummaryObject(project1));
+
+function getRemainingTasks(project1) {
+  const remainingTasks = project1.openTasks - project1.completedTasks;
+  return remainingTasks;
+}
+const totalRemaining = getRemainingTasks(project1);
+console.log(`Remaining tasks: ${totalRemaining}`);
+
+function getRiskInfo(project1) {
+  if (project1.isOverdue || project1.openTasks > 10) {
+    return true;
+  } else {
+    return false;
+  }
+}
+const onRisk = getRiskInfo(project1);
+console.log(getRiskInfo(project1));
+
+const project2 = {
+  name: "Analytics dashboard redesign",
+  status: "Active",
+  priority: "Medium",
+  openTasks: 4,
+  completedTasks: 2,
+  owner: "Design team",
+  isOverdue: true,
+};
+
+console.log(getProjectSummaryObject(project2));
+console.log(getRemainingTasks(project2));
+console.log(getRiskInfo(project2));
+
+function getKey(project2) {
+  Object.keys(project2);
+  return object[key];
+}
+
+console.log(project2[name]);
+console.log(project2[owner]);
+console.log(project2[openTasks]);
+console.log(project2[unknownProperty]);
+
+const keys = Object.keys(project1);
+console.log(keys);
+console.log(keys.length);

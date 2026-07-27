@@ -14,11 +14,11 @@ ProductFlow is a learning product management dashboard.
 
 Current stage:
 
-- ProductFlow Static v2.3 JavaScript Loops
+- ProductFlow Static v2.4 JavaScript Objects
 - HTML and CSS baseline completed
-- JavaScript variables, functions and arrays practiced
-- for loops and value accumulation practiced
-- Ready for objects
+- JavaScript functions, arrays and loops practiced
+- Object properties and mutations practiced
+- Ready for arrays of objects
 
 Project folder:
 
@@ -48,6 +48,7 @@ Project folder:
 | Day 18 | Functions, parameters, arguments and return                  | Done   |
 | Day 19 | Arrays, indexes, length, adding and removing elements        | Done   |
 | Day 20 | for loops, array iteration and accumulation                  | Done   |
+| Day 21 | Objects, properties, reading and updating object data        | Done   |
 
 ## How to open ProductFlow Static
 

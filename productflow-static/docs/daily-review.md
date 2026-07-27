@@ -324,3 +324,24 @@ Result:
 - break used for first-match search
 - Maximum value calculated manually
 - Loop breakpoint debugging completed
+
+## Day 21 — Objects
+
+Status: Done  
+Score: waiting for review
+
+Result:
+
+- Object literals created
+- Object properties accessed
+- Dot notation practiced
+- Bracket notation practiced
+- Dynamic property access practiced
+- Object properties updated
+- New properties added
+- Temporary property deleted
+- Objects passed into functions
+- Object mutation reviewed
+- Property existence checked
+- Object.keys practiced
+- Object breakpoint debugging completed
