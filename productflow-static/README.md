@@ -211,14 +211,8 @@ Or use VS Code Live Server:
 - Numeric property accumulation
 - Counting objects by property
 - Finding objects by ID
-- Finding objects by name
 - Returning objects from functions
 - Updating objects inside arrays
-- Project progress calculations
-- Building lists from objects
-- Finding maximum object values
-- Portfolio metrics
-- Arrays of objects debugging
 
 ## Project structure
 

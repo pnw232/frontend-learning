@@ -349,7 +349,7 @@ Result:
 ## Day 22 — Arrays of objects
 
 Status: Done  
-Score: waiting for review
+Score: Score: 97/100
 
 Result:
 
@@ -357,13 +357,9 @@ Result:
 - Objects accessed by array index
 - Structured project data iterated
 - Open and completed tasks accumulated
-- Project metrics calculated
-- Projects counted by status
-- Projects found by ID and name
-- Found objects safely checked
+- Average project workload calculated
+- Active and overdue projects counted
+- High-priority project identified
+- Project found safely by ID
 - Project status updated by ID
-- Project progress calculated
-- Project list generated
-- Maximum workload project found
-- Portfolio summary created
-- Arrays of objects breakpoint debugging completed
+- Missing project ID handled safely

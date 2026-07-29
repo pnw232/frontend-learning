@@ -619,7 +619,7 @@ const allProjects = [
     id: 4,
     name: "Mobile onboarding research",
     status: "Active",
-    priority: "low",
+    priority: "Low",
     openTasks: 6,
     completedTasks: 4,
     owner: "Research team",
@@ -688,6 +688,16 @@ function getAverageTaskPerProject(allProjects) {
 const resultAverageTasks = getAverageTaskPerProject(allProjects);
 console.log(`Average open tasks: ${resultAverageTasks}`);
 
+let activeProjectsCount = 0;
+for (let index = 0; index < allProjects.length; index += 1) {
+  const currentProject = allProjects[index];
+
+  if (currentProject.status === "Active") {
+    activeProjectsCount += 1;
+  }
+}
+console.log(`Active projects: ${activeProjectsCount}`);
+
 function getProjectsWithPriorityHigh(allProjects) {
   let priorityHigh = 0;
 
@@ -701,8 +711,12 @@ function getProjectsWithPriorityHigh(allProjects) {
 
   return null;
 }
-const priorityHighCount = getProjectsWithPriorityHigh(allProjects);
-console.log(`High priority project: ${priorityHighCount.name}`);
+const highPriorityProject = getProjectsWithPriorityHigh(allProjects);
+if (highPriorityProject !== null) {
+  console.log(`High priority project: ${highPriorityProject.name}`);
+} else {
+  console.log("High priority project not found");
+}
 
 function getOverdueProject(allProjects) {
   let overdueProject = 0;
@@ -717,8 +731,22 @@ function getOverdueProject(allProjects) {
 
   return null;
 }
-const projectOverdueCount = getOverdueProject(allProjects);
-console.log(`Overdue project: ${projectOverdueCount.name}`);
+const overdueProject = getOverdueProject(allProjects);
+if (overdueProject !== null) {
+  console.log(`Overdue project: ${overdueProject.name}`);
+} else {
+  console.log("Overdue project not found");
+}
+
+let overdueProjectsCount = 0;
+for (let index = 0; index < allProjects.length; index += 1) {
+  const currentProject = allProjects[index];
+
+  if (currentProject.isOverdue) {
+    overdueProjectsCount += 1;
+  }
+}
+console.log(`Overdue projects: ${overdueProjectsCount}`);
 
 function findProjectById(allProjects, targetId) {
   let foundProject = null;
@@ -734,34 +762,7 @@ function findProjectById(allProjects, targetId) {
 
   return foundProject;
 }
-
 const result3 = findProjectById(allProjects, 3);
-if (result3 !== null) {
-  console.log(result3.name);
-} else {
-  console.log("Project not found");
-}
-
-const result99 = findProjectById(allProjects, 99);
-
-if (result99 !== null) {
-  console.log(result99.name);
-} else {
-  console.log("Project not found");
-}
-
-
-function findProjectById(allProjects, targetId) {
-  let foundProject = null;
-  for (let index = 0; index < allProjects.length; index += 1) {
-    const currentProject = allProjects[index];
-    if (currentProject.id === targetId) {
-      foundProject = currentProject;
-      break;
-    }
-  }
-  return foundProject;
-}
 
 function updateProjectStatus(allProjects, targetId, newStatus) {
   const projectToUpdate = findProjectById(allProjects, targetId);
@@ -775,15 +776,38 @@ function updateProjectStatus(allProjects, targetId, newStatus) {
 }
 
 console.log("--- Проверка ID 3 ---");
-console.log(`До вызова: ${allProjects[2].status}`); 
 
-const result3New = updateProjectStatus(allProjects, 3, "Active");
-console.log(`Результат функции: ${result3New}`); 
-console.log(`После вызова: ${allProjects[2].status}`); 
+const projectBeforeUpdate = findProjectById(allProjects, 3);
 
+if (projectBeforeUpdate !== null) {
+  console.log(`До вызова: ${projectBeforeUpdate.status}`);
+}
 
-console.log("\n--- Проверка ID 99 ---");
+const updateResult = updateProjectStatus(allProjects, 3, "Active");
 
-const result99New = updateProjectStatus(allProjects, 99, "Active");
-console.log(`Результат функции: ${result99New}`);
+console.log(`Результат функции: ${updateResult}`);
+
+const projectAfterUpdate = findProjectById(allProjects, 3);
+
+if (projectAfterUpdate !== null) {
+  console.log(`После вызова: ${projectAfterUpdate.status}`);
+}
+
+console.log("--- Проверка ID 99 ---");
+
+const missingProjectUpdateResult = updateProjectStatus(
+  allProjects,
+  99,
+  "Active",
+);
+
+console.log(`Результат функции: ${missingProjectUpdateResult}`);
 console.log("Ошибок нет");
+
+updateProjectStatus(allProjects, 3, "Paused");
+
+const restoredProject = findProjectById(allProjects, 3);
+
+if (restoredProject !== null) {
+  console.log(`Restored status: ${restoredProject.status}`);
+}
