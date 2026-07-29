@@ -582,3 +582,208 @@ console.log(getKey(project2, "unknownProperty"));
 const keys = Object.keys(project1);
 console.log("Массив ключей:", keys);
 console.log("Количество ключей:", keys.length);
+
+// Day 22 — Arrays of objects
+const allProjects = [
+  {
+    id: 1,
+    name: "User onboarding redesign",
+    status: "Active",
+    priority: "High",
+    openTasks: 5,
+    completedTasks: 3,
+    owner: "Product team",
+    isOverdue: false,
+  },
+  {
+    id: 2,
+    name: "Analytics dashboard redesign",
+    status: "Active",
+    priority: "Medium",
+    openTasks: 4,
+    completedTasks: 2,
+    owner: "Design team",
+    isOverdue: true,
+  },
+  {
+    id: 3,
+    name: "Hypothesis tracking system",
+    status: "Paused",
+    priority: "Medium",
+    openTasks: 3,
+    completedTasks: 1,
+    owner: "Research team",
+    isOverdue: false,
+  },
+  {
+    id: 4,
+    name: "Mobile onboarding research",
+    status: "Active",
+    priority: "low",
+    openTasks: 6,
+    completedTasks: 4,
+    owner: "Research team",
+    isOverdue: false,
+  },
+];
+console.log(allProjects);
+console.log(allProjects.length);
+
+console.log(allProjects[0].name);
+console.log(allProjects[1].status);
+console.log(allProjects[2].owner);
+console.log(allProjects[3].openTasks);
+
+const secondProject = allProjects[1];
+
+console.log(secondProject.name);
+console.log(secondProject.priority);
+console.log(secondProject.isOverdue);
+
+for (let index = 0; index < allProjects.length; index += 1) {
+  const currentProject = allProjects[index];
+
+  console.log(
+    `${index + 1}. ${currentProject.name} — ${currentProject.status} — ${currentProject.openTasks} open`,
+  );
+}
+
+function getTotalTasks(allProjects) {
+  let totalOpenTasks = 0;
+
+  for (let index = 0; index < allProjects.length; index += 1) {
+    const currentProject = allProjects[index];
+    totalOpenTasks += currentProject.openTasks;
+  }
+
+  return totalOpenTasks;
+}
+const resultOpenTasks = getTotalTasks(allProjects);
+console.log(`Total open tasks: ${resultOpenTasks}`);
+
+function getCompletedTasks(allProjects) {
+  let totalCompletedTasks = 0;
+
+  for (let index = 0; index < allProjects.length; index += 1) {
+    const currentProject = allProjects[index];
+    totalCompletedTasks += currentProject.completedTasks;
+  }
+
+  return totalCompletedTasks;
+}
+const resultCompletedTasks = getCompletedTasks(allProjects);
+console.log(`Total completed tasks: ${resultCompletedTasks}`);
+
+function getAverageTaskPerProject(allProjects) {
+  if (allProjects.length === 0) return 0;
+
+  let totalOpenTasks = 0;
+  for (let index = 0; index < allProjects.length; index += 1) {
+    const currentProject = allProjects[index];
+    totalOpenTasks += currentProject.openTasks;
+  }
+
+  return totalOpenTasks / allProjects.length;
+}
+const resultAverageTasks = getAverageTaskPerProject(allProjects);
+console.log(`Average open tasks: ${resultAverageTasks}`);
+
+function getProjectsWithPriorityHigh(allProjects) {
+  let priorityHigh = 0;
+
+  for (let index = 0; index < allProjects.length; index += 1) {
+    const currentProject = allProjects[index];
+
+    if (currentProject.priority === "High") {
+      return currentProject;
+    }
+  }
+
+  return null;
+}
+const priorityHighCount = getProjectsWithPriorityHigh(allProjects);
+console.log(`High priority project: ${priorityHighCount.name}`);
+
+function getOverdueProject(allProjects) {
+  let overdueProject = 0;
+
+  for (let index = 0; index < allProjects.length; index += 1) {
+    const currentProject = allProjects[index];
+
+    if (currentProject.isOverdue === true) {
+      return currentProject;
+    }
+  }
+
+  return null;
+}
+const projectOverdueCount = getOverdueProject(allProjects);
+console.log(`Overdue project: ${projectOverdueCount.name}`);
+
+function findProjectById(allProjects, targetId) {
+  let foundProject = null;
+
+  for (let index = 0; index < allProjects.length; index += 1) {
+    const currentProject = allProjects[index];
+    if (currentProject.id === targetId) {
+      foundProject = currentProject;
+
+      break;
+    }
+  }
+
+  return foundProject;
+}
+
+const result3 = findProjectById(allProjects, 3);
+if (result3 !== null) {
+  console.log(result3.name);
+} else {
+  console.log("Project not found");
+}
+
+const result99 = findProjectById(allProjects, 99);
+
+if (result99 !== null) {
+  console.log(result99.name);
+} else {
+  console.log("Project not found");
+}
+
+
+function findProjectById(allProjects, targetId) {
+  let foundProject = null;
+  for (let index = 0; index < allProjects.length; index += 1) {
+    const currentProject = allProjects[index];
+    if (currentProject.id === targetId) {
+      foundProject = currentProject;
+      break;
+    }
+  }
+  return foundProject;
+}
+
+function updateProjectStatus(allProjects, targetId, newStatus) {
+  const projectToUpdate = findProjectById(allProjects, targetId);
+
+  if (projectToUpdate !== null) {
+    projectToUpdate.status = newStatus;
+    return true;
+  }
+
+  return false;
+}
+
+console.log("--- Проверка ID 3 ---");
+console.log(`До вызова: ${allProjects[2].status}`); 
+
+const result3New = updateProjectStatus(allProjects, 3, "Active");
+console.log(`Результат функции: ${result3New}`); 
+console.log(`После вызова: ${allProjects[2].status}`); 
+
+
+console.log("\n--- Проверка ID 99 ---");
+
+const result99New = updateProjectStatus(allProjects, 99, "Active");
+console.log(`Результат функции: ${result99New}`);
+console.log("Ошибок нет");

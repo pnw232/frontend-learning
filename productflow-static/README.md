@@ -6,7 +6,7 @@ The goal of this version is to build the first static HTML structure for a produ
 
 ## Current version
 
-ProductFlow Static v2.4 JavaScript Objects
+ProductFlow Static v2.5 JavaScript Arrays of Objects
 
 ## Pages
 
@@ -205,6 +205,20 @@ Or use VS Code Live Server:
 - Property existence checks
 - Object.keys
 - Object debugging in DevTools
+- Arrays of objects
+- Accessing objects by array index
+- Iterating structured project data
+- Numeric property accumulation
+- Counting objects by property
+- Finding objects by ID
+- Finding objects by name
+- Returning objects from functions
+- Updating objects inside arrays
+- Project progress calculations
+- Building lists from objects
+- Finding maximum object values
+- Portfolio metrics
+- Arrays of objects debugging
 
 ## Project structure
 
@@ -233,11 +247,12 @@ productflow-static/
 
 ## Next steps
 
-- Create arrays of objects
-- Iterate project objects
-- Calculate metrics from structured data
-- Find and update project records
-- Prepare dashboard data models
+- Learn modern array methods
+- Practice forEach
+- Transform data with map
+- Filter project collections
+- Find records with find
+- Calculate metrics with reduce
 
 ## Week 1 baseline
 

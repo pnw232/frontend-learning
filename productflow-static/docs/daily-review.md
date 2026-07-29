@@ -345,3 +345,25 @@ Result:
 - Property existence checked
 - Object.keys practiced
 - Object breakpoint debugging completed
+
+## Day 22 — Arrays of objects
+
+Status: Done  
+Score: waiting for review
+
+Result:
+
+- Array of project objects created
+- Objects accessed by array index
+- Structured project data iterated
+- Open and completed tasks accumulated
+- Project metrics calculated
+- Projects counted by status
+- Projects found by ID and name
+- Found objects safely checked
+- Project status updated by ID
+- Project progress calculated
+- Project list generated
+- Maximum workload project found
+- Portfolio summary created
+- Arrays of objects breakpoint debugging completed
