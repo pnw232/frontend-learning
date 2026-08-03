@@ -811,3 +811,68 @@ const restoredProject = findProjectById(allProjects, 3);
 if (restoredProject !== null) {
   console.log(`Restored status: ${restoredProject.status}`);
 }
+
+
+// Day 23 — Modern array methods
+
+allProjects.forEach((project, index) => {
+  console.log(`${index + 1}. ${project.name} - ${project.status}`);
+});
+
+const newAllProjects = allProjects.map((project) => {
+  return project.name;
+});
+console.log(newAllProjects);
+console.log(newAllProjects.length);
+
+const projectTaskSummary = allProjects.map((project) => {
+  return `${project.name} — ${project.openTasks} open tasks`;
+});
+console.log(projectTaskSummary.join('\n'));
+
+const activeStatus = allProjects.filter((project) => {
+  return project.status === "Active";
+});
+console.log(activeStatus);
+console.log(activeStatus.length);
+
+const researchTeamOwner = allProjects.filter((project) => {
+  return project.owner === "Research team";
+});
+console.log(researchTeamOwner);
+console.log(researchTeamOwner.length);
+console.log("Project names:");
+researchTeamOwner.forEach((project) => {
+  console.log(project.name); 
+});
+
+const projectID3 = allProjects.find((project) => {
+  return project.id === 3;
+});
+if (projectID3) {
+  console.log(projectID3.name);
+} else {
+  console.log("Project not found");
+}
+
+const projectID3Status = allProjects.find((project) => {
+  return project.id === 3;
+});
+
+if (projectID3Status) {
+
+  console.log(`Before: ${projectID3Status.status}`);
+  
+  projectID3.status = "Active";
+  
+  console.log(`After: ${projectID3Status.status}`);
+  
+  const projectInArray = allProjects.find(project => project.id === 3);
+  console.log(`Array value: ${projectInArray.status}`);
+  
+  projectID3Status.status = "Paused";
+  console.log(`Restored: ${projectID3Status.status}`);
+
+} else {
+  console.log("Project with ID 3 not found in the allProjects array.");
+}

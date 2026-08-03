@@ -6,7 +6,7 @@ The goal of this version is to build the first static HTML structure for a produ
 
 ## Current version
 
-ProductFlow Static v2.5 JavaScript Arrays of Objects
+ProductFlow Static v2.6 JavaScript Array Methods
 
 ## Pages
 
@@ -213,6 +213,16 @@ Or use VS Code Live Server:
 - Finding objects by ID
 - Returning objects from functions
 - Updating objects inside arrays
+- Array callback functions
+- forEach
+- map
+- filter
+- find
+- Transforming arrays
+- Filtering project collections
+- Finding project records
+- Combining array methods
+- Array method debugging
 
 ## Project structure
 
@@ -241,12 +251,11 @@ productflow-static/
 
 ## Next steps
 
-- Learn modern array methods
-- Practice forEach
-- Transform data with map
-- Filter project collections
-- Find records with find
-- Calculate metrics with reduce
+- Learn some and every
+- Calculate values with reduce
+- Practice method chaining
+- Build derived project data
+- Prepare data for DOM rendering
 
 ## Week 1 baseline
 

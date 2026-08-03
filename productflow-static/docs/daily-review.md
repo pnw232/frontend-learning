@@ -349,7 +349,7 @@ Result:
 ## Day 22 — Arrays of objects
 
 Status: Done  
-Score: Score: 97/100
+Score: 97/100
 
 Result:
 
@@ -363,3 +363,21 @@ Result:
 - Project found safely by ID
 - Project status updated by ID
 - Missing project ID handled safely
+
+## Day 23 — Modern array methods
+
+Status: Done  
+Score: waiting for review
+
+Result:
+
+- Callback functions practiced
+- Projects iterated with forEach
+- Project names transformed with map
+- Project summaries transformed with map
+- Active projects filtered
+- Projects filtered by owner
+- Project found by ID with find
+- Found project updated safely
+- Source array behavior reviewed
+- Array method breakpoint debugging completed
