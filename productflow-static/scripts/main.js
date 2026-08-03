@@ -812,7 +812,6 @@ if (restoredProject !== null) {
   console.log(`Restored status: ${restoredProject.status}`);
 }
 
-
 // Day 23 — Modern array methods
 
 allProjects.forEach((project, index) => {
@@ -828,13 +827,15 @@ console.log(newAllProjects.length);
 const projectTaskSummary = allProjects.map((project) => {
   return `${project.name} — ${project.openTasks} open tasks`;
 });
-console.log(projectTaskSummary.join('\n'));
+console.log(projectTaskSummary.join("\n"));
+console.log(projectTaskSummary[1]);
 
 const activeStatus = allProjects.filter((project) => {
   return project.status === "Active";
 });
 console.log(activeStatus);
-console.log(activeStatus.length);
+console.log(`Active projects length: ${activeStatus.length}`);
+console.log(`All projects length: ${allProjects.length}`);
 
 const researchTeamOwner = allProjects.filter((project) => {
   return project.owner === "Research team";
@@ -843,7 +844,7 @@ console.log(researchTeamOwner);
 console.log(researchTeamOwner.length);
 console.log("Project names:");
 researchTeamOwner.forEach((project) => {
-  console.log(project.name); 
+  console.log(project.name);
 });
 
 const projectID3 = allProjects.find((project) => {
@@ -855,24 +856,31 @@ if (projectID3) {
   console.log("Project not found");
 }
 
+const projectID99 = allProjects.find((project) => {
+  return project.id === 99;
+});
+if (projectID99) {
+  console.log(projectID99.name);
+} else {
+  console.log("Project not found");
+}
+
 const projectID3Status = allProjects.find((project) => {
   return project.id === 3;
 });
 
 if (projectID3Status) {
-
   console.log(`Before: ${projectID3Status.status}`);
-  
-  projectID3.status = "Active";
-  
+
+  projectID3Status.status = "Active";
+
   console.log(`After: ${projectID3Status.status}`);
-  
-  const projectInArray = allProjects.find(project => project.id === 3);
+
+  const projectInArray = allProjects.find((project) => project.id === 3);
   console.log(`Array value: ${projectInArray.status}`);
-  
+
   projectID3Status.status = "Paused";
   console.log(`Restored: ${projectID3Status.status}`);
-
 } else {
   console.log("Project with ID 3 not found in the allProjects array.");
 }

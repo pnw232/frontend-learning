@@ -367,7 +367,7 @@ Result:
 ## Day 23 — Modern array methods
 
 Status: Done  
-Score: waiting for review
+Score: 97 / 100
 
 Result:
 
